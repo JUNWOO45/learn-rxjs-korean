@@ -1,24 +1,24 @@
 # Subjects
 
-A Subject is a special type of Observable which shares a single execution path among observers.
+Subject는 옵저버들 간에 단일 실행 경로를 공유하는 특별한 유형의 옵저버블입니다.
 
-You can think of this as a single speaker talking at a microphone in a room full of people. Their message \(the subject\) is being delivered to many \(multicast\) people \(the observers\) at once. This is the basis of **multicasting**. Typical observables would be comparable to a 1 on 1 conversation.
+사람들로 가득 찬 방에서 마이크를 들고 말하는 단 한 명의 사람으로 생각할 수 있습니다. 그들의 메시지 \(the subject\) 는 수많은 \(multicast\) 사람들에게 \(the observers\) 동시에 전달됩니다. 멀티캐스팅**의 개념입니다. 일반적인 옵저버블은 1대 1의 대화라고 생각할 수 있습니다.
 
-There are 4 variants of subjects:
+subjects에는 4가지 종류가 있습니다:
 
-* **Subject** - No initial value or replay behavior.
-* **AsyncSubject** - Emits latest value to observers upon completion.
-* **BehaviorSubject** - Requires an initial value and emits its current value \(last emitted item\) to new subscribers.
-* **ReplaySubject** - Emits specified number of last emitted values \(a replay\) to new subscribers.
+* **Subject** - 초기값과 전달하려는 동작이 없다.
+* **AsyncSubject** - complete(완료)되면 마지막 이벤트를 발생한다.
+* **BehaviorSubject** - 초기값이 필요하며 현재 값(마지막으로 내보낸 항목)을 새로운 subscribers에게 전달한다.
+* **ReplaySubject** - 새로운 subscribers에게 저장된 모든 값들을 전달한다.
 
-## Contents
+## 목차
 
 * [AsyncSubject](asyncsubject.md)
 * [BehaviorSubject](behaviorsubject.md)
 * [ReplaySubject](replaysubject.md)
 * [Subject](subject.md)
 
-## Subjects comparison
+## Subjects 비교
 
 \( [Stackblitz](https://stackblitz.com/edit/rxjs-subjects-comparison?file=index.ts&devtoolsheight=100) \)
 
@@ -114,13 +114,13 @@ NEXT(s)
 */
 ```
 
-### Additional Resources
+### 추가 자료
 
-* [Official Overview](http://reactivex.io/rxjs/manual/overview.html#subject)
+* [공식 개요](http://reactivex.io/rxjs/manual/overview.html#subject)
 
   :newspaper:
 
-* [Official Documentation](http://reactivex.io/documentation/subject.html)
+* [공식 문서](http://reactivex.io/documentation/subject.html)
 
   :newspaper:
 

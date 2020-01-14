@@ -37,13 +37,13 @@ Operators(연산자)는 복잡한 비동기 작업을 우아하고 선언적인 
 
 **혹은...**
 
-[Complete listing in alphabetical order](learn-rxjs/operators/complete.md)
+[알파벳 순으로 나열](learn-rxjs/operators/complete.md)
 
 #### Subjects 이해하기
 
-A Subject is a special type of Observable which shares a single execution path among observers.
+Subject는 옵저버들 간에 단일 실행 경로를 공유하는 특별한 유형의 옵저버블입니다.
 
-* [Overview](learn-rxjs/subjects/)
+* [개요](learn-rxjs/subjects/)
 * [AsyncSubject](learn-rxjs/subjects/asyncsubject.md)
 * [BehaviorSubject](learn-rxjs/subjects/behaviorsubject.md)
 * [ReplaySubject](learn-rxjs/subjects/replaysubject.md)
