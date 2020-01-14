@@ -4,7 +4,7 @@
 
 ### 예시
 
-#### 예시 1: 간단한AsyncSubject
+#### 예시 1: 간단한 AsyncSubject
 
 \( [Stackblitz](https://stackblitz.com/edit/rxjs-asyncsubject?file=index.ts&devtoolsheight=100) \)
 
