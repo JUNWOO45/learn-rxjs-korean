@@ -1,10 +1,10 @@
 # AsyncSubject
 
-## Emits its last value on completion
+## 완료 시 마지막 값 전달
 
-### Examples
+### 예시
 
-#### Example 1: simple AsyncSubject
+#### 예시 1: 간단한AsyncSubject
 
 \( [Stackblitz](https://stackblitz.com/edit/rxjs-asyncsubject?file=index.ts&devtoolsheight=100) \)
 
@@ -24,11 +24,11 @@ sub.next(456); //nothing logged
 sub.complete(); //456, 456 logged by both subscribers
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts)
+> :file\_folder: 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts)
 
