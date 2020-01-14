@@ -2,7 +2,7 @@
 
 ## RxJS 배우기
 
-RxJS에 대한 명확한 예제, 설명, 그리고 출처
+RxJS에 대한 명확한 예제, 설명, 그리고 자료
 
 _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
