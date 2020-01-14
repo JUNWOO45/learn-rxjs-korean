@@ -5,7 +5,7 @@ Clear examples, explanations, and resources for RxJS.
 
 _By [@btroncone](https://twitter.com/BTroncone)_
 
-## Introduction
+## 소개
 
 [RxJS](https://github.com/ReactiveX/rxjs) is one of the hottest libraries in web
 development today. Offering a powerful, functional approach for dealing with
