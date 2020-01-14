@@ -2,7 +2,7 @@
 
 ## RxJS 배우기
 
-Clear examples, explanations, and resources for RxJS.
+RxJS에 대한 명확한 예제, 설명, 그리고 출처
 
 _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
@@ -10,21 +10,21 @@ _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
 [RxJS](https://github.com/ReactiveX/rxjs) is one of the hottest libraries in web development today. Offering a powerful, functional approach for dealing with events and with integration points into a growing number of frameworks, libraries, and utilities, the case for learning Rx has never been more appealing. Couple this with the ability to utilize your knowledge across [nearly any language](http://reactivex.io/languages.html), having a solid grasp on reactive programming and what it can offer seems like a no-brainer.
 
-**But...**
+**하지만...**
 
 Learning RxJS and reactive programming is [hard](https://twitter.com/hoss/status/742643506536153088). There's the multitude of concepts, large API surface, and fundamental shift in mindset from an [imperative to declarative style](https://tylermcginnis.com/imperative-vs-declarative-programming/). This site focuses on making these concepts approachable, the examples clear and easy to explore, and features references throughout to the best RxJS related material on the web. The goal is to supplement the [official docs](http://reactivex.io/rxjs/) and pre-existing learning material while offering a new, fresh perspective to clear any hurdles and tackle the pain points. Learning Rx may be difficult but it is certainly worth the effort!
 
-### Brand New to RxJS?
+### RxJS가 처음이신가요?
 
 Start getting familiar with all the key concepts needed to be productive with our [RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)!
 
-## Content
+## 목차
 
-#### Operators
+#### 연산자
 
 Operators are the horse-power behind observables, providing an elegant, declarative solution to complex asynchronous tasks. This section contains all [RxJS operators](learn-rxjs/operators/), included with clear, executable examples. Links to additional resources and recipes for each operator are also provided, when applicable.
 
-**Operator Categories**
+**연산자 카테고리**
 
 * [Combination](learn-rxjs/operators/combination/)
 * [Conditional](learn-rxjs/operators/conditional/)
@@ -35,11 +35,11 @@ Operators are the horse-power behind observables, providing an elegant, declarat
 * [Transformation](learn-rxjs/operators/transformation/)
 * [Utility](learn-rxjs/operators/utility/)
 
-**OR...**
+**혹은...**
 
 [Complete listing in alphabetical order](learn-rxjs/operators/complete.md)
 
-#### Understanding Subjects
+#### Subjects 이해하기
 
 A Subject is a special type of Observable which shares a single execution path among observers.
 
@@ -49,7 +49,7 @@ A Subject is a special type of Observable which shares a single execution path a
 * [ReplaySubject](learn-rxjs/subjects/replaysubject.md)
 * [Subject](learn-rxjs/subjects/subject.md)
 
-#### Concepts
+#### 개념
 
 Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'. This section helps solidify the major concepts needed to feel comfortable with reactive programming and Observables.
 
@@ -58,7 +58,7 @@ Without a solid base knowledge of how Observables work behind the scenes, it's e
 * [Time based operators comparison](learn-rxjs/concepts/time-based-operators-comparison.md)
 * [Understanding Operator Imports](learn-rxjs/concepts/operator-imports.md)
 
-#### Recipes
+#### 사용법
 
 Recipes for common use-cases and interesting solutions with RxJS.
 
@@ -88,15 +88,15 @@ Recipes for common use-cases and interesting solutions with RxJS.
 * [Type Ahead](learn-rxjs/recipes/type-ahead.md)
 * [Uncover Image Game](learn-rxjs/recipes/uncover-image-game.md)
 
-## Introductory Resources
+## 입문자들을 위한 자료
 
 New to RxJS and reactive programming? In addition to the content found on this site, these excellent resources will help jump start your learning experience!
 
-#### Conferences
+#### 컨퍼런스
 
 * [RxJS Live](https://www.rxjs.live/) - RxJS specific conference, Las Vegas
 
-#### Reading
+#### 읽을거리
 
 * [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) -
 
@@ -110,7 +110,7 @@ New to RxJS and reactive programming? In addition to the content found on this s
 
   Todd Motto
 
-#### Videos
+#### 영상
 
 * [RxJS Basics](https://ultimatecourses.com/courses/rxjs?ref=4) :dollar: - Brian
 
@@ -137,13 +137,13 @@ New to RxJS and reactive programming? In addition to the content found on this s
 
   Jeremy Lund
 
-#### Exercises
+#### 예제
 
 * [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar
 
   Husain
 
-#### Tools
+#### 도구들
 
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) -
 
@@ -163,11 +163,11 @@ New to RxJS and reactive programming? In addition to the content found on this s
 
 _Interested in RxJS 4? Check out_ [_Denis Stoyanov's_](https://github.com/xgrommx) _excellent_ [_eBook_](https://xgrommx.github.io/rx-book/)_!_
 
-## Translations
+## 번역
 
 * [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
 
-### A Note On References
+### 참고사항
 
 All references included in this GitBook are resources, both free and paid, that helped me tremendously while learning RxJS. If you come across an article or video that you think should be included, please use the _edit this page_ link in the top menu and submit a pull request. Your feedback is appreciated!
 
