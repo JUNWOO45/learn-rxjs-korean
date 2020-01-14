@@ -12,19 +12,19 @@ _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
 **하지만...**
 
-RxJS와 리액티브 프로그래밍을 배우는 것은 [어렵습니다](https://twitter.com/hoss/status/742643506536153088). There's the multitude of concepts, large API surface, and fundamental shift in mindset from an [imperative to declarative style](https://tylermcginnis.com/imperative-vs-declarative-programming/). This site focuses on making these concepts approachable, the examples clear and easy to explore, and features references throughout to the best RxJS related material on the web. The goal is to supplement the [official docs](http://reactivex.io/rxjs/) and pre-existing learning material while offering a new, fresh perspective to clear any hurdles and tackle the pain points. Learning Rx may be difficult but it is certainly worth the effort!
+RxJS와 리액티브 프로그래밍을 배우는 것은 [어렵습니다](https://twitter.com/hoss/status/742643506536153088). [명령형과 선언형 프로그래밍](https://tylermcginnis.com/imperative-vs-declarative-programming/)에서부터 수많은 개념들, 다양한 API, 근본적인 사고방식의 변화에 이르기까지 많은 것들을 배워야합니다. 이 사이트는 RxJS에 관한 이해하기 쉬운 설명, 깔끔한 예제와 간단한 검색, 그리고 웹 상에 존재하는 좋은 참고자료들을 제공하고 있습니다. 이 사이트는 새롭고 신선한 관점을 제공하여 배우기 힘들고 고통스러웠던 [공식 문서](http://reactivex.io/rxjs/)와 기존의 학습자료들을 보충하려합 Rx를 배우는 것은 어려울테지만, 확실히 노력할 가치가 있습니다!
 
 ### RxJS가 처음이신가요?
 
-Start getting familiar with all the key concepts needed to be productive with our [RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)!
+[RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)를 통해 생산성을 높이는 데 필요한 모든 핵심 개념들을 학습하세요!
 
 ## 목차
 
-#### 연산자
+#### Operators(연산자)
 
-Operators are the horse-power behind observables, providing an elegant, declarative solution to complex asynchronous tasks. This section contains all [RxJS operators](learn-rxjs/operators/), included with clear, executable examples. Links to additional resources and recipes for each operator are also provided, when applicable.
+Operators(연산자)는 복잡한 비동기 작업을 우아하고 선언적인 솔루션으로 해결해주는 강력한 기술입니다. 이번 섹션은 모든  [RxJS 연산자](learn-rxjs/operators/)와 실행 가능한 명확한 예제를 함께 포함하고 있습니다 . 추가 자료와 각각의 연산자에대한 적절한 사용법 또한 제공되고 있습니다.
 
-**연산자 카테고리**
+**Operator(연산자) 카테고리**
 
 * [Combination](learn-rxjs/operators/combination/)
 * [Conditional](learn-rxjs/operators/conditional/)
