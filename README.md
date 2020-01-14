@@ -51,7 +51,7 @@ Subject는 옵저버들 간에 단일 실행 경로를 공유하는 특별한 �
 
 #### 개념
 
-Without a solid base knowledge of how Observables work behind the scenes, it's easy for much of RxJS to feel like 'magic'. This section helps solidify the major concepts needed to feel comfortable with reactive programming and Observables.
+옵저버블이 어떻게 동작하는지에 대한 확실한 기초 지식이 없다면, RxJS가 '마법'으로 느껴질겁니다. 이번 섹션에서는 리액티브 프로그래밍, 그리고 옵저버블과 친해지기위해 필요한 중요한 개념들을 익히게 됩니다.
 
 * [RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)
 * [RxJS v5 -&gt; v6 Upgrade](learn-rxjs/concepts/rxjs5-6.md)
