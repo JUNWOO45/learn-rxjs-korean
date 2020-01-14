@@ -1,7 +1,5 @@
 # RxJS 배우기
 
-## RxJS 배우기
-
 Clear examples, explanations, and resources for RxJS.
 
 _By_ [_@btroncone_](https://twitter.com/BTroncone)
