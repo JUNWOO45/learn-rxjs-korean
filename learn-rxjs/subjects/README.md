@@ -116,15 +116,7 @@ NEXT(s)
 
 ### 추가 자료
 
-* [공식 개요](http://reactivex.io/rxjs/manual/overview.html#subject)
-
-  📰 
-
-* [공식 문서](http://reactivex.io/documentation/subject.html)
-
-  📰 
-
-* [On The Subject Of Subjects \(in RxJS\)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)
-
-  📰 - Ben Lesh
+* [공식 개요](http://reactivex.io/rxjs/manual/overview.html#subject)📰 
+* [공식 문서](http://reactivex.io/documentation/subject.html)📰 
+* [On The Subject Of Subjects \(in RxJS\)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)📰 - Ben Lesh
 
