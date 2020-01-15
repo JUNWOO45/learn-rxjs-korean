@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Learn RxJS 5 Gitbook",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2"
+  },
   "devDependencies": {
     "jasmine": "^2.4.1",
     "rxjs": "^5.0.0-beta.2"
