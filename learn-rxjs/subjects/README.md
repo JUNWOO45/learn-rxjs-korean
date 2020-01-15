@@ -7,8 +7,8 @@ Subject는 옵저버들 간에 단일 실행 경로를 공유하는 특별한 �
 subjects에는 4가지 종류가 있습니다:
 
 * **Subject** - 초기값과 전달하려는 동작이 없다.
-* **AsyncSubject** - complete(완료)되면 마지막 이벤트를 발생한다.
-* **BehaviorSubject** - 초기값이 필요하며 현재 값(마지막으로 내보낸 항목)을 새로운 subscribers에게 전달한다.
+* **AsyncSubject** - complete\(완료\)되면 마지막 이벤트를 발생한다.
+* **BehaviorSubject** - 초기값이 필요하며 현재 값\(마지막으로 내보낸 항목\)을 새로운 subscribers에게 전달한다.
 * **ReplaySubject** - 새로운 subscribers에게 저장된 모든 값들을 전달한다.
 
 ## 목차
@@ -118,13 +118,13 @@ NEXT(s)
 
 * [공식 개요](http://reactivex.io/rxjs/manual/overview.html#subject)
 
-  :newspaper:
+  📰 
 
 * [공식 문서](http://reactivex.io/documentation/subject.html)
 
-  :newspaper:
+  📰 
 
 * [On The Subject Of Subjects \(in RxJS\)](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)
 
-  :newspaper: - Ben Lesh
+  📰 - Ben Lesh
 
