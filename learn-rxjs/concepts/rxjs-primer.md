@@ -77,11 +77,11 @@ secondSubscription.unsubscribe();
 
 기본적으로, Subscription은 옵저버블과 옵저버사이의 1대1이면서도 일방적인 데이터흐름을 만들어냅니다. 마치 여러분의 상사(옵저버블)가 구린 PR을 머지했다고 당신(옵저버)에게 소리치는 것(방출)과 비슷합니다. 바로 **unicasting** 으로 알려져있는 방법이죠. 만약 당신이 컨퍼런스 대화를 좋아한다면 - 한 명의 옵저버블과 수많은 옵저버들 - 당신은 **multicasting** 을 포함하는 다른 방법을 취해야 할 것입니다. 이와 관련해서는 나중에 더 알아보죠!
 
-옵저버에게 데이터를 방출하는 옵저버블은, 이건 push 기반의 모델이라는 점을 유의해야합니다. The source doesn't know or care what subscribers do with the data, it simply pushes it down the line.
+옵저버에게 데이터를 방출하는 옵저버블은, push 기반의 모델이라는 점을 유의해야합니다. Subscriber가 이 데이터로 뭘 하든 신경쓰지않고, 단지 push할 뿐입니다.
 
-While working on a stream of events is nice, it's only so useful on its own. **What makes RxJS the "lodash for events" are its...**
+이벤트의 연속이라는 개념만으로도 훌륭하지만, **RxJS를 "이벤트계의 lodash"로 만들어준 것은 연산자(Operators)입니다**
 
-## Operators
+## 연산자
 
 Operators offer a way to manipulate values from a source, returning an observable of the transformed values. Many of the RxJS operators will look familiar if you are used to JavaScripts `Array` methods. For instance, if you want to transform emitted values from an observable source, you can use [`map`](../operators/transformation/map.md):
 
