@@ -1,50 +1,48 @@
-# RxJS Primer
+# RxJS 입문서
 
-Brand new to RxJS? In this article we will take a crash course through all the major concepts you will need to begin getting a grasp on, and start being productive with RxJS. Hold on tight and let's get started!
+RxJS를 처음 접하시나요? 이 페이지에서는 RxJS를 이해하는데 필요한 모든 주요 개념들을 배우고, RxJS를 다뤄볼 것입니다. 준비되었으면 시작해봅시다!
 
-## What is an Observable?
+## Observable이란?
 
-An observable represents a stream, or source of data that can arrive over time. You can create an observable from nearly anything, but the most common use case in RxJS is from events. This can be anything from mouse moves, button clicks, input into a text field, or even route changes. The easiest way to create an observable is through the built in creation functions. For example, we can use the [`fromEvent`](../operators/creation/fromevent.md) helper function to create an observable of mouse click events:
+옵저버블은 시간의 흐름에 따라 도착하는 스트림, 또는 데이터의 출처를 의미합니다. 우린 거의 대부분의 것들에서 옵저버블을 만들어낼 수 있지만, 이벤트에서 사용되어지는 일이 가장 흔합니다. 이벤트는 마우스의 움직임, 버튼 클릭,텍스트 필드를 채워넣는 행위, 라우트 변경 등을 의미합니다. 옵저버블을 생성하는 가장 쉬운 방법은 내장된 생성 함수를 사용하는 것입니다. 예를 들어, 마우스 클릭 이벤트의 옵저버블을 만들기 위해 [`fromEvent`](../operators/creation/fromevent.md) 함수를 사용할 수 있습니다:
 
 ```javascript
-// import the fromEvent operator
+// fromEvent 연산자를 가져옵니다
 import { fromEvent } from 'rxjs';
 
-// grab button reference
+// button을 참조
 const button = document.getElementById('myButton');
 
-// create an observable of button clicks
+// 버튼 클릭 옵저버블을 생성합니다
 const myObservable = fromEvent(button, 'click');
 ```
 
-At this point we have an observable but it's not doing anything. **This is because observables are cold, or do not activate a producer \(like wiring up an event listener\), until there is a...**
+이 시점에서 우린 옵저버블을 가지고 있지만, 옵저버블은 아무 행동도 하지 않습니다. **왜냐하면 옵저버블이 cold하거나, Subscription이 있기 전까지는 활성화되지 않기 때문입니다.**
 
 ## Subscription
 
-Subscriptions are what set everything in motion. You can think of this like a faucet, you have a stream of water ready to be tapped \(observable\), someone just needs to turn the handle. In the case of observables, that role belongs to the `subscriber`.
+Subscriptions은 모든 것을 동작하게 합니다. 이걸 수도꼭지에 비유할 수 있는데, 누군가가 손잡이를 돌리기만 하면 물줄기(옵저버블)가 흐르거나 멈출 수 있습니다. `subscriber` 가 이러한 역할을 합니다.
 
-To create a subscription, you call the `subscribe` method, supplying a function \(or object\) - also known as an `observer`. This is where you can decide how to **react**\(-ive programming\) to each event. Let's walk through what happens in the previous scenario when a subscription is created:
+subscription을 만들기 위해서는, `observer` 라고 부르는 함수와 함께 `subscribe` 메소드를 호출해야 합니다. 이 곳에서 각각의 이벤트에대해 어떻게 행동할지 결정할 수 있습니다. Subscription이 생성될 때, 이전 시나리오에서 무슨 일이 일어나는지 확인해봅시다:
 
 ```javascript
-// import the fromEvent operator
+// fromEvent 연산자를 가져옵니다
 import { fromEvent } from 'rxjs';
 
-// grab button reference
+// button을 참조
 const button = document.getElementById('myButton');
 
-// create an observable of button clicks
+// 버튼 클릭 옵저버블을 생성합니다
 const myObservable = fromEvent(button, 'click');
 
-// for now, let's just log the event on each click
+// 자, 이젠 클릭할 때 마다 로그를 생성합니다
 const subscription = myObservable.subscribe(event => console.log(event));
 ```
 
-In the example above, calling `myObservable.subscribe()` will:
+위 예시에서,myObservable.subscribe()` 은 다음과 같은 일을 합니다:
 
-1. Set up an event listener on our button for click events.
-2. Call the function we passed to the subscribe method \(observer\) on each click
-
-   event.
+1. 버튼에 클릭 이벤트에 대한 이벤트 리스너를 설정합니다.
+2. 매 클릭 이벤트 마다 subscribe 메소드와 함께 보낸 함수 \(observer\) 를 실행합니다.
 
 3. Return a subscription object with an `unsubscribe` which contains clean up
 
