@@ -1,8 +1,8 @@
-# Concepts
+# 개념
 
-Short explanations of common RxJS scenarios and use-cases.
+일반적으로 사용되는 RxJS 시나리오 및 사용 사례에 대한 간단한 설명
 
-## Contents
+## 목차
 
 * [RxJS Primer](rxjs-primer.md)
 * [RxJS v5 -&gt; v6 Upgrade](rxjs5-6.md)
