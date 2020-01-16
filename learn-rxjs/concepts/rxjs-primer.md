@@ -42,43 +42,42 @@ const subscription = myObservable.subscribe(event => console.log(event));
 위 예시에서,myObservable.subscribe()` 은 다음과 같은 일을 합니다:
 
 1. 버튼에 클릭 이벤트에 대한 이벤트 리스너를 설정합니다.
-2. 매 클릭 이벤트 마다 subscribe 메소드와 함께 보낸 함수 \(observer\) 를 실행합니다.
+2. 매 클릭 이벤트 마다 subscribe 메소드와 함께 넘겨준 함수 \(observer\) 를 실행합니다.
 
-3. Return a subscription object with an `unsubscribe` which contains clean up
+3. 적절한 이벤트 리스너 삭제와 같은 일을 하는 `unsubscribe` 와 함께  Subscription 객체를 반환합니다.
 
-   logic, like removing appropriate event listeners.
 
-The subscribe method also accepts an object map to handle the case of error or completion. You probably won't use this as much as simply supplying a function, but it's good to be aware of should the need arise:
+Subscribe 메소드는 에러나 완료 처리를 다루기 위해 object map 또한 허용합니다. 이 기능을 자주 사용하지 않을테지만, 다음과 같이 필요한 경우가 있을 수 있어 알고있는 것이 좋습니다:
 
 ```javascript
-// instead of a function, we will pass an object with next, error, and complete methods
+// 함수 대신, next, error, 그리고 complete 객체를 넘겨줍니다
 const subscription = myObservable.subscribe({
-  // on successful emissions
+  // 이벤트 발생이 성공하면,
   next: event => console.log(event),
-  // on errors
+  // 에러,
   error: error => console.log(error),
-  // called once on completion
+  // 완료되면,
   complete: () => console.log('complete!')
 });
 ```
 
-It's important to note that each subscription will create a new execution context. This means calling `subscribe` a second time will create a new event listener:
+각각의 subscription이 새로운 실행 컨텍스트를 생성한다는 점이 중요합니다. 즉, 2번째 호출한 `subscribe` 는 새로운 이벤트 리스너를 만듭니다.
 
 ```javascript
-// addEventListener called
+// 첫번째
 const subscription = myObservable.subscribe(event => console.log(event));
 
-// addEventListener called again!
+// 두번째
 const secondSubscription = myObservable.subscribe(event => console.log(event));
 
-// clean up with unsubscribe
+// unsubscribe를 사용해서 삭제
 subscription.unsubscribe();
 secondSubscription.unsubscribe();
 ```
 
-By default, a subscription creates a one on one, one-sided conversation between the observable and observer. This is like your boss \(the observable\) yelling \(emitting\) at you \(the observer\) for merging a bad PR. This is also known as **unicasting**. If you prefer a conference talk scenario - one observable, many observers - you will take a different approach which includes **multicasting** with `Subjects` \(either explicitly or behind the scenes\). More on that in a future article!
+기본적으로, Subscription은 옵저버블과 옵저버사이의 1대1이면서도 일방적인 데이터흐름을 만들어냅니다. 마치 여러분의 상사(옵저버블)가 구린 PR을 머지했다고 당신(옵저버)에게 소리치는 것(방출)과 비슷합니다. 바로 **unicasting** 으로 알려져있는 방법이죠. 만약 당신이 컨퍼런스 대화를 좋아한다면 - 한 명의 옵저버블과 수많은 옵저버들 - 당신은 **multicasting** 을 포함하는 다른 방법을 취해야 할 것입니다. 이와 관련해서는 나중에 더 알아보죠!
 
-It's worth noting that when we discuss an Observable source emitting data to observers, this is a push based model. The source doesn't know or care what subscribers do with the data, it simply pushes it down the line.
+옵저버에게 데이터를 방출하는 옵저버블은, 이건 push 기반의 모델이라는 점을 유의해야합니다. The source doesn't know or care what subscribers do with the data, it simply pushes it down the line.
 
 While working on a stream of events is nice, it's only so useful on its own. **What makes RxJS the "lodash for events" are its...**
 
