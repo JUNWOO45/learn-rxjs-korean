@@ -60,7 +60,7 @@ Subject는 옵저버들 간에 단일 실행 경로를 공유하는 특별한 �
 
 #### 사용법
 
-Recipes for common use-cases and interesting solutions with RxJS.
+RxJS를 사용한 일반적인 예시 및 흥미로운 사용법들.
 
 * [Alphabet Invasion Game](learn-rxjs/recipes/alphabet-invasion-game.md)
 * [Battleship Game](learn-rxjs/recipes/battleship-game.md)
@@ -90,7 +90,7 @@ Recipes for common use-cases and interesting solutions with RxJS.
 
 ## 입문자들을 위한 자료
 
-New to RxJS and reactive programming? In addition to the content found on this site, these excellent resources will help jump start your learning experience!
+RxJS와 리액티브 프로그래밍을 처음 접하십니까? 이 사이트에서 찾을 수 있는 콘텐츠 외에도, 아래의 자료들은 여러분의 학습에 큰 도움을 줄 것입니다.
 
 #### 컨퍼런스
 
@@ -98,76 +98,44 @@ New to RxJS and reactive programming? In addition to the content found on this s
 
 #### 읽을거리
 
-* [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) -
+* [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) - 공식문서
 
-  Official Docs
+* [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) - André Staltz
 
-* [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) -
-
-  André Staltz
-
-* [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) -
-
-  Todd Motto
+* [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) - Todd Motto
 
 #### 영상
 
-* [RxJS Basics](https://ultimatecourses.com/courses/rxjs?ref=4) :dollar: - Brian
+* [RxJS Basics](https://ultimatecourses.com/courses/rxjs?ref=4) :dollar: - Brian Troncone
 
-  Troncone
-
-* [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) -
-
-  Jafar Husain
+* [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) - Jafar Husain
 
 * [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
-* [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) -
+* [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) - Ben Lesh
 
-  Ben Lesh
+* [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) :dollar: - Brian Troncone
 
-* [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing)
+* [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) :dollar: - André Staltz
 
-  :dollar: - Brian Troncone
-
-* [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming)
-
-  :dollar: - André Staltz
-
-* [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) -
-
-  Jeremy Lund
+* [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) - Jeremy Lund
 
 #### 예제
 
-* [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar
-
-  Husain
+* [Functional Programming in JavaScript](http://reactivex.io/learnrx/) - Jafar Husain
 
 #### 도구들
 
-* [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) -
+* [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
 
-  André Staltz
+* [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
 
-* [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) -
+* [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
 
-  Misha Moroshko
+* [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) - Mojtaba Zarei
 
-* [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) -
-
-  Cédric Soulas
-
-* [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) -
-
-  Mojtaba Zarei
-
-_Interested in RxJS 4? Check out_ [_Denis Stoyanov's_](https://github.com/xgrommx) _excellent_ [_eBook_](https://xgrommx.github.io/rx-book/)_!_
+_RxJS 4에 관심이 있으십니까?_ [_Denis Stoyanov_](https://github.com/xgrommx) _의 훌륭한_ [_eBook_](https://xgrommx.github.io/rx-book/)_을 살펴보세요!_
 
 ## 번역
 
 * [简体中文](https://rxjs-cn.github.io/learn-rxjs-operators)
-
-### 참고사항
-
-All references included in this GitBook are resources, both free and paid, that helped me tremendously while learning RxJS. If you come across an article or video that you think should be included, please use the _edit this page_ link in the top menu and submit a pull request. Your feedback is appreciated!
 
