@@ -16,7 +16,7 @@ RxJS와 리액티브 프로그래밍을 배우는 것은 [어렵습니다](https
 
 ### RxJS가 처음이신가요?
 
-[RxJS Primer](learn-rxjs/concepts/rxjs-primer.md)를 통해 생산성을 높이는 데 필요한 모든 핵심 개념들을 학습하세요!
+[RxJS 입문서](learn-rxjs/concepts/rxjs-primer.md)를 통해 생산성을 높이는 데 필요한 모든 핵심 개념들을 학습하세요!
 
 ## 목차
 
