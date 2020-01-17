@@ -79,32 +79,32 @@ secondSubscription.unsubscribe();
 
 옵저버에게 데이터를 방출하는 옵저버블은, push 기반의 모델이라는 점을 유의해야합니다. Subscriber가 이 데이터로 뭘 하든 신경쓰지않고, 단지 push할 뿐입니다.
 
-이벤트의 연속이라는 개념만으로도 훌륭하지만, **RxJS를 "이벤트계의 lodash"로 만들어준 것은 연산자(Operators)입니다**
+이벤트의 연속이라는 개념만으로도 훌륭하지만, **RxJS를 "이벤트계의 lodash"로 만들어준 것은 연산자(Operators)때문입니다**
 
-## 연산자
+## 연산자(operators)
 
-Operators offer a way to manipulate values from a source, returning an observable of the transformed values. Many of the RxJS operators will look familiar if you are used to JavaScripts `Array` methods. For instance, if you want to transform emitted values from an observable source, you can use [`map`](../operators/transformation/map.md):
+연산자는 원본데이터를 조작하여 옵저버블로 변환된 값을 제공합니다. 만약 당신이 자바스크립트의 `객체` 메소드에 익숙하다면, RxJS의 수많은 연산자들도 눈에 익을 것입니다. 예를 들어, 만약 방출된 값을 바꾸길 원한다면, [`map`](../operators/transformation/map.md) 메소드를 사용하면 됩니다:
 
 ```javascript
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 /*
- *  'of' allows you to deliver values in a sequence
- *  In this case, it will emit 1,2,3,4,5 in order.
+ *  'of' 를 통해 값을 순차적으로 전달할 수 있습니다
+ *  다음과 같은 경우라면, 1,2,3,4,5 를 순서대로 뱉어낼 것입니다.
  */
 const dataSource = of(1, 2, 3, 4, 5);
 
-// subscribe to our source observable
+// 원본 옵저버블을 구독하기
 const subscription = dataSource
   .pipe(
-    // add 1 to each emitted value
+    // 방출된 값에 각각 1씩 더하기
     map(value => value + 1)
   )
   // log: 2, 3, 4, 5, 6
   .subscribe(value => console.log(value));
 ```
 
-Or if you want to filter for specific values, you can use [`filter`](../operators/filtering/filter.md):
+또 만약 특정한 값을 거르고 싶다면, [`filter`](../operators/filtering/filter.md) 를 사용하면 됩니다:
 
 ```javascript
 import { of } from 'rxjs';
@@ -112,21 +112,21 @@ import { filter } from 'rxjs/operators';
 
 const dataSource = of(1, 2, 3, 4, 5);
 
-// subscribe to our source observable
+// 원본 옵저버블을 구독하기
 const subscription = dataSource
   .pipe(
-    // only accept values 2 or greater
+    // 2보다 크거나 같은 값만 받는다
     filter(value => value >= 2)
   )
   // log: 2, 3, 4, 5
   .subscribe(value => console.log(value));
 ```
 
-In practice, if there is a problem you need to solve, it's more than likely **there is an operator for that**. And while the sheer number of operators can be overwhelming as you begin your RxJS journey, you can narrow it down to a small handful \(and we will\) to start being effective. Over time, you will come to appreciate the flexibility of the operator library when obscure scenarios inevitably arrive.
+대부분의 경우, **그 문제를 해결해줄 수 있는 연산자**가 이미 존재하고 있을 확률이 큽니다. RxJS의 세계에 처음 발을 담궜다면, 수많은 연산자의 갯수에 압도당할 수 있습니다. 하지만 정말 자주 쓰이는 몇가지의 연산자를 사용해보는 것으로 시작해보세요. 시간이 지나면서, 처리하기 곤란한 상황에 마주했을 때, 여러분은 연산자의 유연성에 감탄할 것입니다.
 
-**One thing you may have noticed in the example above, is operators exist within a...**
+**이미 위 예시에서 눈치챘을 수도 있겠지만, 연산자들은 파이프 내부에 존재합니다**
 
-## Pipe
+## 파이프
 
 The `pipe` function is the assembly line from your observable data source through your operators. Just like raw material in a factory goes through a series of stops before it becomes a finished product, source data can pass through a `pipe`-line of operators where you can manipulate, filter, and transform the data to fit your use case. It's not uncommon to use 5 \(or more\) operators within an observable chain, contained within the `pipe` function.
 
