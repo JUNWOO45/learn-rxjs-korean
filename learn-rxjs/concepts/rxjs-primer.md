@@ -128,7 +128,7 @@ const subscription = dataSource
 
 ## 파이프
 
-`파이프`함수는 연산자 조립 라인이라고 보면 됩니다. 공장의 원자재가 완제품이 되기까진 일련의 단계를 거쳐야하는 것처럼, 원본 데이터는 사용자의 입맛에 맞게 데이터를 조작, 필터링, 변환할 수 있는 `파이프` 라고 불리는 연산자의 과정을 거쳐야합니다. `pipe` 함수 안에서 옵저버블 체인을 이용하여 5개, 혹은 그 이상의 연산자를 사용하는 일도 가능합니다.
+`파이프`함수는 연산자 조립 라인이라고 보면 됩니다. 공장의 원자재가 완제품이 되기까진 일련의 단계를 거쳐야하는 것처럼, 원본 데이터는 사용자의 입맛에 맞게 데이터를 조작, 필터링, 그리고 변환시킬 수 있는 `파이프` 라고 불리는 과정을 거치게됩니다. `pipe` 함수 안에서는 옵저버블 체인을 이용하여 5개, 혹은 그 이상의 연산자를 사용하는 일도 가능합니다.
 
 For instance, a typeahead solution built with observables may use a group of operators to optimize both the request and display process:
 
