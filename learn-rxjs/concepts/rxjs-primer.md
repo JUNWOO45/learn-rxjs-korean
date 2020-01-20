@@ -149,32 +149,32 @@ inputValue
   });
 ```
 
-**But how do you know which operator fits your use-case? The good news is...**
+**내게 필요한 연산자가 무엇인지 어떻게 알 수 있을까요? 좋은 소식은 바로...**
 
-## Operators can be grouped into common categories
+## 연산자를 공통 카테고리로 묶어 분류할 수 있다는 점입니다.
 
-The first stop when looking for the correct operator is finding a related category. Need to filter data from a source? Check out the [`filtering`](../operators/filtering/) operators. Trying to track down a bug, or debug the flow of data through your observable stream? There are [`utility`](../operators/utility/) operators that will do the trick. **The operator categories include...**
+내게 필요한 연산자를 찾을 때 첫번째로 생각해야할 것은 관련 카테고리를 찾는 것입니다. 원본 데이터를 필터링해야합니까? [`필터링`](../operators/filtering/) 연산자를 찾아보세요. 버그를 추적하거나, 옵저버블의 흐름을 통해 데이터 플로우를 디버깅해야합니까? [`유틸리티`](../operators/utility/) 연산자가 도와줄 것입니다. **연산자 카테고리는 다음과 같습니다.**
 
-### [Creation operators](../operators/creation/)
+### [생성 연산자](../operators/creation/)
 
-These operators allow the creation of an observable from nearly anything. From generic to specific use-cases you are free to turn everything into a stream.
+이 연산자들은 대부분의 것들을 옵저버블로 만들어줍니다. 일반적인 케이스부터 정말 특별한 케이스에 이르기까지, 모든 것들을 하나의 데이터흐름으로 바꿀 수 있습니다.
 
-For example, suppose we are creating a progress bar as a user scrolls through an article. We could turn the scroll event into a stream by utilizing the [`fromEvent`](../operators/creation/fromevent.md) operator:
+예를 들어, 사용자가 문서를 스크롤할 때 진행 표시줄을 만든다고 해봅시다. [`fromEvent`](../operators/creation/fromevent.md) 연산자를 통해 스크롤 이벤트를 데이터 흐름으로 바꿀 수 있습니다:
 
 ```javascript
 fromEvent(scrollContainerElement, 'scroll')
   .pipe(
-    // we will discuss cleanup strategies like this in future article
+    // 연산자들의 사용법은 나중에 자세히하고, 여기선 넘어가보죠.
     takeUntil(userLeavesArticle)
   )
   .subscribe(event => {
-    // calculate and update DOM
+    // 계산 후 DOM업데이트
   });
 ```
 
-The most commonly used creation operators are [`of`](../operators/creation/of.md), [`from`](../operators/creation/from.md), and [`fromEvent`](../operators/creation/fromevent.md).
+가장 많이 사용되는 생성 연산자에는 [`of`](../operators/creation/of.md), [`from`](../operators/creation/from.md), 그리고[`fromEvent`](../operators/creation/fromevent.md) 등이 있습니다.
 
-### [Combination operators](../operators/combination/)
+### [조합 연산자](../operators/combination/)
 
 The combination operators allow the joining of information from multiple observables. Order, time, and structure of emitted values is the primary variation among these operators.
 
