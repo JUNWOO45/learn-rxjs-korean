@@ -250,11 +250,11 @@ const secondSubscriber = source.subscribe(value => {
 
 멀티캐스팅 연산자 중에서는 [`shareReplay`](../operators/multicasting/sharereplay.md) 가 가장 많이 쓰입니다.
 
-### [Transformation operators](../operators/transformation/)
+### [변환 연산자](../operators/transformation/)
 
-Transforming values as they pass through an operator chain is a common task. These operators provide transformation techniques for nearly any use-case you will encounter.
+연산자 체인을 통과하며 값을 변화시키는 것은 매우 일반적인 일입니다. 변환 연산자들을 여러분이 마주칠 거의 모든 상황에서 사용가능한 값을 변화시키는 다양한 방법들을 제공해줍니다.
 
-For example, we may want to accumulate a state object from a source over time, similar to [Redux](https://redux.js.org/):
+예를 들어, [Redux](https://redux.js.org/) 와 비슷하게, 시간이 지남에 따라 원본 데이터로부터 상태값을 축적시키길 원할 수 있습니다:
 
 ```javascript
 source
@@ -266,28 +266,28 @@ source
   .subscribe();
 ```
 
-The most commonly used transformation operators are [`concatMap`](../operators/transformation/concatmap.md), [`map`](../operators/transformation/map.md), [`mergeMap`](../operators/transformation/mergemap.md), [`scan`](../operators/transformation/scan.md), and [`switchMap`](../operators/transformation/switchmap.md).
+변환 연산자에서는 [`concatMap`](../operators/transformation/concatmap.md), [`map`](../operators/transformation/map.md), [`mergeMap`](../operators/transformation/mergemap.md), [`scan`](../operators/transformation/scan.md), 그리고[`switchMap`](../operators/transformation/switchmap.md) 가 가장 많이 사용됩니다.
 
-## Operators have common behaviors
+## 연산자들은 공통적인 행동을 수행합니다.
 
-While operators can be grouped into common categories, operators within a category often share common behavior. By recognizing this common behavior you can start creating a [_'choose your own operator'_ tree](https://rxjs-dev.firebaseapp.com/operator-decision-tree) in your mind.
+같은 카테고리에 속하는 연산자들은 종종 비슷한 동작을 공유합니다. 이러한 공통 행위를 인식하면, 마음 속에서 [_'당신만의 연산자 선택 트리'_ ](https://rxjs-dev.firebaseapp.com/operator-decision-tree) 를 만들 수 있습니다.
 
-**For instance, a large amount of operators can be grouped into...**
+**예를 들어, 수많은 연산자들을 다음과 같이 분류할 수 있습니다...**
 
-#### Operators that flatten
+#### 평탄화(flatten) 옵저버블
 
-Or, in other words, operators that manage the subscription of an inner observable, emitting those values into a single observable source. One common use case for flattening operators is handling HTTP requests in a observable or promise based API, but that is really just scratching the surface:
+또는 다른 말로, 값들을 하나의 옵저버블 소스로 방출하면서 내부 옵저버블의 구독을 관리하는 연산자. 평탄화(flatten) 연산자의 대표적인 예는, HTTP 요청을 프로미스나 옵저버블 기반으로 처리하는 것이지만, 이것은 정말 겉핥기에 불과합니다.
 
 ```javascript
 fromEvent(button, 'click')
   .pipe(
     mergeMap(value => {
-      // this 'inner' subscription is managed by mergeMap, with response value emitted to observer
+      // 이러한 '내부' subscription은 응답값을 옵저버에게로 방출하며 mergeMap을 통해 관리합니다
       return makeHttpRequest(value);
     })
   )
   .subscribe(response => {
-    // do something
+    // 로직 수행
   });
 ```
 
