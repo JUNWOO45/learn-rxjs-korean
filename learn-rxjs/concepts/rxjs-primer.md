@@ -176,26 +176,26 @@ fromEvent(scrollContainerElement, 'scroll')
 
 ### [조합 연산자](../operators/combination/)
 
-The combination operators allow the joining of information from multiple observables. Order, time, and structure of emitted values is the primary variation among these operators.
+조합 연산자는 여러 옵저버블의 값을 결합해줍니다. 조합 연산자는 주로 방출된 값의 순서, 시간 및 구조를 변형합니다.
 
-For example, we can combine updates from multiple data sources to perform a calculation:
+예를 들어, 여러 데이터 값을 결합하여 계산을 할 수 있습니다:
 
 ```javascript
-// give me the last emitted value from each source, whenever either source emits
+// 원본데이터가 방출될 때마다, 각 원본데이터로부터 마지막으로 방출된 값을 사용하여
 combineLatest(sourceOne, sourceTwo).subscribe(
   ([latestValueFromSourceOne, latestValueFromSourceTwo]) => {
-    // perform calculation
+    // 계산을 수행.
   }
 );
 ```
 
-The most commonly used combination operators are [`combineLatest`](../operators/combination/combinelatest.md), [`concat`](../operators/combination/concat.md), [`merge`](../operators/combination/merge.md), [`startWith`](../operators/combination/startwith.md), and [`withLatestFrom`](../operators/combination/withlatestfrom.md).
+조합 연산자 중에서는 [`combineLatest`](../operators/combination/combinelatest.md), [`concat`](../operators/combination/concat.md), [`merge`](../operators/combination/merge.md), [`startWith`](../operators/combination/startwith.md), 그리고[`withLatestFrom`](../operators/combination/withlatestfrom.md) 가 자주 사용됩니다.
 
-### [Error handling operators](../operators/error_handling/)
+### [에러 핸들링 연산자](../operators/error_handling/)
 
-The error handling operators provide effective ways to gracefully handle errors and perform retries, should they occur.
+에러 핸들링 연산자는 오류가 발생할 경우 우아하게 오류를 처리하고 효과적으로 재시도를 수행하는 방법을 제공합니다.
 
-For example, we can use [`catchError`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/error_handling/catcherror.md) to safeguard against failed network requests:
+예를 들어, [`catchError`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/error_handling/catcherror.md) 를 사용하여 네트워크 요청이 실패했을 경우를 대비할 수 있습니다:
 
 ```javascript
 source
@@ -207,25 +207,25 @@ source
     })
   )
   .subscribe(value => {
-    // take action
+    // 네트워크 요청이 실패했을 경우의 로직입력
   });
 ```
 
-The most commonly used error handling operators is [`catchError`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/error_handling/catcherror.md).
+에러 핸들링 연산자에서는 [`catchError`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/error_handling/catcherror.md) 가 가장 많이 쓰입니다.
 
-### [Filtering operators](../operators/filtering/)
+### [필터링 연산자](../operators/filtering/)
 
-The filtering operators provide techniques for accepting - or declining - values from an observable source and dealing with backpressure, or the build up of values within a stream.
+필터링 연산자는 옵저버블 원본 데이터의 값을 받거나 감소시키는 방법을 제공하고, backpressure를 다루거나, 스트림 내에서의 값 증가를 처리할 수 있게 도와줍니다.
 
-For example, we can use the [`take`](../operators/filtering/take.md) operator to capture only the first `5` emitted values from a source:
+예를 들어, [`take`](../operators/filtering/take.md) 연산자를 사용해서 원본데이터로부터 가장 처음 방출되는 `5` 값을 잡아낼 수 있습니다:
 
 ```javascript
 source.pipe(take(5)).subscribe(value => {
-  // take action
+  // 로직 수행
 });
 ```
 
-The most commonly used filtering operators are [`debounceTime`](../operators/filtering/debouncetime.md), [`distinctUntilChanged`](../operators/filtering/distinctuntilchanged.md), [`filter`](../operators/filtering/filter.md), [`take`](../operators/filtering/take.md), and [`takeUntil`](../operators/filtering/takeuntil.md).
+가장 자주 사용되는 필터링 연산자에는 [`debounceTime`](../operators/filtering/debouncetime.md), [`distinctUntilChanged`](../operators/filtering/distinctuntilchanged.md), [`filter`](../operators/filtering/filter.md), [`take`](../operators/filtering/take.md), 그리고[`takeUntil`](../operators/filtering/takeuntil.md) 등이 있습니다.
 
 ### [Multicasting operators](../operators/multicasting/)
 
