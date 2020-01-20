@@ -16,12 +16,12 @@ const sub = new AsyncSubject();
 
 sub.subscribe(console.log);
 
-sub.next(123); //nothing logged
+sub.next(123); //아무 로그도 찍히지 않음
 
 sub.subscribe(console.log);
 
-sub.next(456); //nothing logged
-sub.complete(); //456, 456 logged by both subscribers
+sub.next(456); //아무 로그도 찍히지 않음
+sub.complete(); //양 쪽의 subscribers로부터 456, 456 로그가 찍힘
 ```
 
 ### 추가 자료
