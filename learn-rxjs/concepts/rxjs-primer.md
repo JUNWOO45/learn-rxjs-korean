@@ -227,28 +227,28 @@ source.pipe(take(5)).subscribe(value => {
 
 가장 자주 사용되는 필터링 연산자에는 [`debounceTime`](../operators/filtering/debouncetime.md), [`distinctUntilChanged`](../operators/filtering/distinctuntilchanged.md), [`filter`](../operators/filtering/filter.md), [`take`](../operators/filtering/take.md), 그리고[`takeUntil`](../operators/filtering/takeuntil.md) 등이 있습니다.
 
-### [Multicasting operators](../operators/multicasting/)
+### [멀티캐스팅 연산자](../operators/multicasting/)
 
-In RxJS observables are cold, or unicast \(one source per subscriber\) by default. These operators can make an observable hot, or multicast, allowing side-effects to be shared among multiple subscribers.
+기본적으로 RxJS의 옵저버블은, cold하고 unicast(하나의 소스에 하나의 subscriber)한 성격을 가지고 있습니다. 이 연산자들은 옵저버블을 hot하고 멀티캐스트가 가능하게 바꿔주어서, 여러 subscribers들이 사이드이펙트를 공유할 수 있도록 만들어줍니다.
 
-For example, we may want late subscribers to share, and receive the last emitted value from an active source:
+예를 들어, 늦게 실행되는 subscribers가 마지막으로 방출된 값을 공유하고, 또한 값을 받기를 원할 수 있습니다.
 
 ```javascript
 const source = data.pipe(shareReplay());
 
 const firstSubscriber = source.subscribe(value => {
-  // perform some action
+  // 무언가를 하고,
 });
 
-// sometime later...
+// 시간이 지난 뒤..
 
-// second subscriber gets last emitted value on subscription, shares execution context with 'firstSubscriber'
+// 두번째 subscriber는 구독 시 마지막으로 방출된 값을 받고, 'firstSubscriber'와 실행컨텍스트를 공유한다.
 const secondSubscriber = source.subscribe(value => {
-  // perform some action
+  // 무언가를 하고.
 });
 ```
 
-The most commonly used multicasting operator is [`shareReplay`](../operators/multicasting/sharereplay.md).
+멀티캐스팅 연산자 중에서는 [`shareReplay`](../operators/multicasting/sharereplay.md) 가 가장 많이 쓰입니다.
 
 ### [Transformation operators](../operators/transformation/)
 
