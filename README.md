@@ -8,7 +8,7 @@ _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
 ## 소개
 
-[RxJS](https://github.com/ReactiveX/rxjs)는 오늘날 웹 개발에서 가장 인기있는 라이브러리 중 하나입니다. 이벤트를 다루거나, 수많은 프레임워크, 라이브러리, 유틸리티 등에 모두 사용가능한 강력한 함수형 접근방식때문에, 더 많은 사람들이 Rx를 배우고 있습니다.  리액티브 프로그래밍, 그리고 이 Rx의 기능에 대한 확실한 이해를 가지고 있다면, 여러분은 [대부분의 언어](http://reactivex.io/languages.html)에서 Rx를 사용할 수 있습니다.
+[RxJS](https://github.com/ReactiveX/rxjs)는 오늘날 웹 개발에서 가장 인기있는 라이브러리 중 하나입니다. 이벤트를 다루거나, 수많은 프레임워크, 라이브러리, 유틸리티 등에 모두 사용가능한 강력한 함수형 접근방식때문에, 더 많은 사람들이 Rx를 배우고 있습니다. 리액티브 프로그래밍, 그리고 이 Rx의 기능에 대한 확실한 이해를 가지고 있다면, 여러분은 [대부분의 언어](http://reactivex.io/languages.html)에서 Rx를 사용할 수 있습니다.
 
 **하지만...**
 
@@ -20,11 +20,11 @@ RxJS와 리액티브 프로그래밍을 배우는 것은 [어렵습니다](https
 
 ## 목차
 
-#### Operators(연산자)
+#### Operators\(연산자\)
 
-Operators(연산자)는 복잡한 비동기 작업을 우아하고 선언적인 솔루션으로 해결해주는 강력한 기술입니다. 이번 섹션은 모든  [RxJS 연산자](learn-rxjs/operators/)와 실행 가능한 명확한 예제를 함께 포함하고 있습니다 . 추가 자료와 각각의 연산자에대한 적절한 사용법 또한 제공되고 있습니다.
+Operators\(연산자\)는 복잡한 비동기 작업을 우아하고 선언적인 솔루션으로 해결해주는 강력한 기술입니다. 이번 섹션은 모든 [RxJS 연산자](learn-rxjs/operators/)와 실행 가능한 명확한 예제를 함께 포함하고 있습니다 . 추가 자료와 각각의 연산자에대한 적절한 사용법 또한 제공되고 있습니다.
 
-**Operator(연산자) 카테고리**
+**Operator\(연산자\) 카테고리**
 
 * [Combination](learn-rxjs/operators/combination/)
 * [Conditional](learn-rxjs/operators/conditional/)
@@ -99,24 +99,17 @@ RxJS와 리액티브 프로그래밍을 처음 접하십니까? 이 사이트에
 #### 읽을거리
 
 * [RxJS Introduction](https://rxjs-dev.firebaseapp.com/guide/overview) - 공식문서
-
 * [The Introduction to Reactive Programming You've Been Missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) - André Staltz
-
 * [RxJS: Observables, Observers and Operators Introduction](https://ultimatecourses.com/blog/rxjs-observables-observers-operators) - Todd Motto
 
 #### 영상
 
-* [RxJS Basics](https://ultimatecourses.com/courses/rxjs?ref=4) :dollar: - Brian Troncone
-
+* [RxJS Basics](https://ultimatecourses.com/courses/rxjs?ref=4) 💵 - Brian Troncone
 * [Asynchronous Programming: The End of The Loop](https://egghead.io/courses/mastering-asynchronous-programming-the-end-of-the-loop) - Jafar Husain
-
 * [What is RxJS?](https://egghead.io/lessons/rxjs-what-is-rxjs) - Ben Lesh
 * [Creating Observable from Scratch](https://egghead.io/lessons/rxjs-creating-observable-from-scratch) - Ben Lesh
-
-* [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) :dollar: - Brian Troncone
-
-* [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) :dollar: - André Staltz
-
+* [Introduction to RxJS Marble Testing](https://egghead.io/lessons/rxjs-introduction-to-rxjs-marble-testing) 💵 - Brian Troncone
+* [Introduction to Reactive Programming](https://egghead.io/courses/introduction-to-reactive-programming) 💵 - André Staltz
 * [Reactive Programming using Observables](https://www.youtube.com/watch?v=HT7JiiqnYYc&feature=youtu.be) - Jeremy Lund
 
 #### 예제
@@ -126,11 +119,8 @@ RxJS와 리액티브 프로그래밍을 처음 접하십니까? 이 사이트에
 #### 도구들
 
 * [Rx Marbles - Interactive diagrams of Rx Observables](http://rxmarbles.com/) - André Staltz
-
 * [Rx Visualizer - Animated playground for Rx Observables](https://rxviz.com) - Misha Moroshko
-
 * [Reactive.how - Animated cards to learn Reactive Programming](http://reactive.how) - Cédric Soulas
-
 * [Rx Visualization - Visualizes programming with RxJS](https://fingerpich.github.io/rx-visualization/) - Mojtaba Zarei
 
 _RxJS 4에 관심이 있으십니까?_ [_Denis Stoyanov_](https://github.com/xgrommx) _의 훌륭한_ [_eBook_](https://xgrommx.github.io/rx-book/)_을 살펴보세요!_

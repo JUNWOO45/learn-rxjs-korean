@@ -30,7 +30,7 @@ sub.next(3); // OUTPUT => 3,3 (logged from both subscribers)
 
 * [Subject](https://rxjs-dev.firebaseapp.com/api/index/class/Subject)
 
-  :newspaper: - Official docs
+  📰 - Official docs
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/Subject.ts)
 

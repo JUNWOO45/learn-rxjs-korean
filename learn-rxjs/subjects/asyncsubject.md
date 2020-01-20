@@ -26,9 +26,7 @@ sub.complete(); //456, 456 logged by both subscribers
 
 ### 추가 자료
 
-* [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)
+* [AsyncSubject](https://rxjs-dev.firebaseapp.com/api/index/class/AsyncSubject)  📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts)
+> 📂 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/AsyncSubject.ts)
 

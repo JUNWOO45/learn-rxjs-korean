@@ -2,7 +2,7 @@
 
 ## 초기값이 필요하며 현재 값을 새로운 subscribers에게 전달한다
 
-:bulb: 구독 시 마지막 값을 전달하고 싶지만, 초기값을 제공하지 않으려면, [ReplaySubject](replaysubject.md)를 살펴보세요.
+💡 구독 시 마지막 값을 전달하고 싶지만, 초기값을 제공하지 않으려면, [ReplaySubject](replaysubject.md)를 살펴보세요.
 
 ### 예시
 
@@ -89,7 +89,7 @@ merge(click$, interval$).subscribe();
 
 * [BehaviorSubject](https://rxjs-dev.firebaseapp.com/api/index/class/BehaviorSubject)
 
-  :newspaper: - 공식 문서
+  📰 - 공식 문서
 
-> :file\_folder: 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts)
+> 📂 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/BehaviorSubject.ts)
 
