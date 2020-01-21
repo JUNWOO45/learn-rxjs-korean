@@ -274,7 +274,7 @@ source
 
 **예를 들어, 수많은 연산자들을 다음과 같이 분류할 수 있습니다...**
 
-#### 평탄화(flatten) 옵저버블
+#### 평탄화(flatten) 연산자
 
 또는 다른 말로, 값들을 하나의 옵저버블 소스로 방출하면서 내부 옵저버블의 구독을 관리하는 연산자. 평탄화(flatten) 연산자의 대표적인 예는, HTTP 요청을 프로미스나 옵저버블 기반으로 처리하는 것이지만, 이것은 정말 겉핥기에 불과합니다.
 
@@ -291,11 +291,11 @@ fromEvent(button, 'click')
   });
 ```
 
-**We can then divide the flattening operators into common behaviors like...**
+**또한, 평탄화 연산자를 다음과같은 분류로 나눌 수 있습니다**
 
-#### Operators that `switch`
+####  `switch` 연산자
 
-Like a light switch, `switch` based operators will turn off \(unsubscribe\) the current observable and turn on a new observable on emissions from the source. Switch operators are useful in situations you don't want \(or need\) more than one active observable at a time:
+마치 전등처럼, `switch` 를 기반으로한 연산자는 현재 옵저버블을 끄고(unsubscribe) 데이터로부터 방출되는 새로운 옵저버블을 반환할 것입니다. Switch operators are useful in situations you don't want \(or need\) more than one active observable at a time:
 
 ```javascript
 inputValueChanges
