@@ -2,7 +2,7 @@
 
 #### signature: `takeLast(count: number): Observable`
 
-## 마지막 n개의 값을 발생시키고 종료합니ㄷ
+## 마지막 n개의 값을 발생시키고 종료합니다
 
 :bulb: 여러개의 옵저버블에서 마지막으로 발생한 값만 필요하다면, 여러개의 옵저버블이 완료된 후 [forkJoin](../combination/forkjoin.md) 을 사용해보세요!
 
