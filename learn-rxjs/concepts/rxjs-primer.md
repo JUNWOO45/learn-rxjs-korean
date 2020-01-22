@@ -340,33 +340,27 @@ merge(firstObservable, secondObservable)
 
 Merge 기반의 연산자에는 [`merge`](../operators/combination/merge.md), [`mergeMap`](../operators/transformation/mergemap.md), `mergeMapTo` 그리고 [`mergeAll`](../operators/combination/mergeall.md) 이 있습니다.
 
-## Other similarities between operators
+## 연산자들 사이의 또다른 공통점
 
-There are also operators that share a similar goal but offer flexibility in their triggers. For instance, for unsubscribing from an observable after a specific condition is met, we could use:
+비슷한 동작을 하면서도, 유연성을 더해주는 연산자도 있다. 예를 들어, 특정 조건이 충족된 후, 옵저버블을 구독 취소(unsubscribe)하려는 경우에는:
 
-1. [`take`](../operators/filtering/take.md) when we know we only ever want `n`
+1. [`take`](../operators/filtering/take.md) 정확히 `n` 이라는 값만을 원할 때
 
    values.
 
-2. [`takeLast`](../operators/filtering/takelast.md) when you just want the last
+2. [`takeLast`](../operators/filtering/takelast.md) 가장 마지막 `n` 값을 원할 때
 
-   `n` values.
+3. [`takeWhile`](../operators/filtering/takewhile.md) 표현식이 충족되었을 때
 
-3. [`takeWhile`](../operators/filtering/takewhile.md) when we have a predicate
+4. [`takeUntil`](../operators/filtering/takeuntil.md) 다른 소스가 값을 방출(emit)될 때까지 소스가 active하게 유지되기를 원할 때
 
-   expression to supply.
+처음 RxJS를 보면 연산자들이 지나치게 많은 것처럼 보일 수 있지만, 이러한 일반적인 행동과 패턴을 알고 RxJS를 배우면서 더욱 쉽게 접근할 수 있습니다.
 
-4. [`takeUntil`](../operators/filtering/takeuntil.md) when we only want the
+## 이게 나한테 무슨 의미가 있지?
 
-   source to remain active until another source emits.
+옵저버블을 통한 push기반의 프로그래밍에 익숙해지면, 옵저버블 스트림을 통해 여러분의 애플리케이션의 모든 비동기 동작을 모델링해나갈 수 있게됩니다. 이러한 방식은 매우 복잡한 행동을 위한 간단한 해결책과 유연성을 제공해줍니다.
 
-While the number of RxJS operators can seem overhelming at first, these common behaviors and patterns can bridge the gap rather quickly while learning RxJS.
-
-## What does this get me?
-
-As you become more familiar with push based programming through Observables, you can begin to model all async behavior in your applications through observable streams. This opens up simple solutions and flexibility for notably complex behavior.
-
-For instance, suppose we wanted to make a request which saved user activity when they answered a quiz question. Our initial implementation may use the [`mergeMap`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/opearators/transformation/mergemap.md) operator, which fires off a save request on each event:
+예를 들어, 만약 사용자가 퀴즈 질문에 답했을 때 사용자의 활동을 저장하는 요청을 하고 싶다고 가정해봅시다. 초기 구현 시에는 [`mergeMap`](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/opearators/transformation/mergemap.md) 연산자를 사용하여 각각의 이벤트에대한 저장 요청을 실행할 것입니다:
 
 ```javascript
 const formEvents = fromEvent(formField, 'click');
@@ -378,24 +372,24 @@ const subscription = formEvents
   .subscribe();
 ```
 
-Later, it's determined that we need to ensure order of these saves. Armed with the knowledge of operator behavior from above, instead of implementing a complex queueing system we can instead replace the [`mergeMap`](../operators/transformation/mergemap.md) operator with [`concatMap`](../operators/transformation/concatmap.md) and push up our changes:
+시간이 지나, 순서 또한 저장할 필요가 있다고 깨닫게 되었다고 해봅시다. 위에서 배운 지식으로 무장한다면, 복잡한 대기열 시스템을 구현하는 대신, 단순히 [`mergeMap`](../operators/transformation/mergemap.md) 연산자를 [`concatMap`](../operators/transformation/concatmap.md) 으로 교체하는 것만으로 우리의 목적을 달성할 수 있습니다.
 
 ```javascript
 const formEvents = fromEvent(formField, 'click');
 const subscription = formEvents
   .pipe(
     map(convertToAppropriateValue),
-    // now the next request won't begin until the previous completes
+    // 이제 다음 리퀘스트는 이전 작업이 완료되기 전까지는 절대 시작하지 않을 것입니다
     concatMap(saveRequest)
   )
   .subscribe();
 ```
 
-With the change of one word we are now queueing our event requests, and this is just scratching the surface of what is possible!
+단어 하나의 변경으로 우리는 이벤트 리퀘스트 요청을 줄세워서 대기할 수 있게 되었고, 이러한 예시는 빙산의 일각에 불과합니다!
 
-## Keep Going!
+## 계속 나아가세요!
 
-Learning RxJS can be intimidating, but it's a path I promise is worth the investment. If some of these concepts are still fuzzy \(or make no sense at all!\), don't worry! It will all click soon.
+RxJS를 배우는 것은 어렵지만, 투자할 만한 가치가 있다고 확신합니다. 개념들 중 일부가 여전히 모호해도 \(전혀 이해가 가지 않아도!\) 걱정마세요! 금방 이해가 갈 거에요.
 
-Start checking out the operators on the left hand side of the site for common examples and use-cases, as well as the additional [introductory resources](../../#introductory-resources) we have collected from across the web. Good luck and enjoy your journey to becoming a reactive programming expert!
+사이트 왼쪽에 있는 일반적인 예와 사용 사례들이 적혀있는 연산자 항목과, 웹을 통해 수집한 후 추가한 [입문자들을 위한 자료](../../#introductory-resources) 를 살펴보세요. 그리고 리액티브 프로그래밍 전문가가 되기위한 여정을 즐기세요. 행운을 빕니다!
 
