@@ -2,13 +2,13 @@
 
 #### signature: `takeLast(count: number): Observable`
 
-## Emit the last n emitted values before completion
+## 마지막 n개의 값을 발생시키고 종료합니ㄷ
 
-:bulb: If you want only the last emission from multiple observables, on completion of multiple observables, try [forkJoin](../combination/forkjoin.md)!
+:bulb: 여러개의 옵저버블에서 마지막으로 발생한 값만 필요하다면, 여러개의 옵저버블이 완료된 후 [forkJoin](../combination/forkjoin.md) 을 사용해보세요!
 
-### Examples
+### 예시
 
-**Example 1: take the last 2 emitted values before completion**
+**예시 1: 발생한 값 중 마지막 2개의 값만 가져오고 종료합니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-zss7oo?file=index.ts&devtoolsheight=100) \)
 
@@ -18,17 +18,17 @@ import { of } from 'rxjs';
 import { takeLast } from 'rxjs/operators';
 
 const source = of('Ignore', 'Ignore', 'Hello', 'World!');
-// take the last 2 emitted values
+// 마지막 2개의 발생한 값만 가져옵니다
 const example = source.pipe(takeLast(2));
 // Hello, World!
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts)
 
