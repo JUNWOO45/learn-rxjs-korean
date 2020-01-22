@@ -2,13 +2,13 @@
 
 #### signature: `takeWhile(predicate: function(value, index): boolean, inclusive?: boolean): Observable`
 
-## Emit values until provided expression is false.
+## 넘겨받은 표현식이 참인 동안, 값을 발생시킵니다.
 
-:bulb: When the optional `inclusive` parameter is set to `true` it will also emit the first item that didn't pass the predicate.
+:bulb: 옵션 파라미터인 `inclusive` 가 `true` 로 지정되면, 참을 만족하지못하는 첫번째 아이템 또한 발생시킵니다. 
 
-### Examples
+### 예시
 
-**Example 1: Take values under limit**
+**예시 1: 조건에 해당하는 값만 받습니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-af3hdf?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/zanefaqexu/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/yakd4jgc/) \)
 
@@ -17,17 +17,17 @@
 import { of } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 
-//emit 1,2,3,4,5
+// 1,2,3,4,5를 발생시킵니다
 const source$ = of(1, 2, 3, 4, 5);
 
-//allow values until value from source is greater than 4, then complete
+//4 이하인 값만 발생시키고, 종료합니다
 source$
   .pipe(takeWhile(val => val <= 4))
    // log: 1,2,3,4
   .subscribe(val => console.log(val));
 ```
 
-**Example 2: \(v6.4+\) takeWhile with inclusive flag**
+**예시2: \(v6.4+\) inclusive를 활용한 takeWhile**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-3bwfup?file=index.ts&devtoolsheight=100) \)
 
@@ -39,13 +39,13 @@ import { takeWhile, filter } from 'rxjs/operators';
 const source$ = of(1, 2, 3, 9);
 
 source$
-  // with inclusive flag, the value causing the predicate to return false will also be emitted
+  // inclusive 를 설정하면, false를 리턴하게 하는 값도 발생되어집니다
   .pipe(takeWhile(val => val <= 3, true))
   // log: 1, 2, 3, 9
   .subscribe(console.log);
 ```
 
-**Example 3: Difference between takeWhile and filter**
+**예시 3: takeWhile 과 filter의 차이점**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-roozza?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/yatoqurewi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/r497jgw3/4/) \)
 
@@ -54,10 +54,10 @@ source$
 import { of } from 'rxjs';
 import { takeWhile, filter } from 'rxjs/operators';
 
-// emit 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3
+// 3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3를 발생시킵니다
 const source$ = of(3, 3, 3, 9, 1, 4, 5, 8, 96, 3, 66, 3, 3, 3);
 
-// allow values until value from source equals 3, then complete
+// 소스의 값이 3일 때만 값을 발생시키고, 종료합니다
 source$
   .pipe(takeWhile(it => it === 3))
   // log: 3, 3, 3
@@ -69,7 +69,7 @@ source$
   .subscribe(val => console.log('filter', val));
 ```
 
-### Related Recipes
+### 관련 사용법
 
 * [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 * [Battleship Game](../../recipes/battleship-game.md)
@@ -85,11 +85,11 @@ source$
 * [Tetris Game](../../recipes/tetris-game.md)
 * [Uncover Image Game](../../recipes/uncover-image-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
 
