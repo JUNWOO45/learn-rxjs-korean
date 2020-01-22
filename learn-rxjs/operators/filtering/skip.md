@@ -2,7 +2,7 @@
 
 #### signature: `skip(the: Number): Observable`
 
-## 제공된 수 만큼의 발생된 값을 건너뛴다
+## 제공된 수 만큼, 발생된 값을 건너뜁니다
 
 ### 왜 `skip` 을 사용할까요?
 
