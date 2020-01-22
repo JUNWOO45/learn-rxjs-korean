@@ -2,19 +2,19 @@
 
 #### signature: `take(count: number): Observable`
 
-## Emit provided number of values before completing.
+## 제공된 수 만큼의 값만 발생시키고 종료합니다.
 
-### Why use `take`?
+### 왜 `take` 를 사용할까요?
 
-When you are interested in only the first emission, you want to use `take`. Maybe you want to see what the user first clicked on when they entered the page, or you would want to subscribe to the click event and just take the first emission. Another use-case is when you need to take a snapshot of data at a particular point in time but do not require further emissions. For example, a stream of user token updates, or a route guard based on a stream in an Angular application.
+만약 여러분이 첫번째로 발생한 값만을 원한다면, `take` 를 사용하세요. 여러분은 사용자가 페이지에 들어와서 처음 클릭한 내용을 확인하거나, 클릭 이벤트를 구독한 뒤 가장 처음 발생한 값만을 보고싶을 수 있습니다. 또 다른 사례는 특정 시점에서 데이터 스냅샷을 작성해야 하지만, 이후 추가적인 값 발생은 원하지 않는 경우입니다. 예를 들어, 사용자 토큰 업데이트의 스트림이나, 앵귤러 애플리케이션에서의 라우트 가드 기반의 스트림이 있습니다.
 
-:bulb: If you want to take a variable number of values based on some logic, or another observable, you can use [takeUntil](takeuntil.md) or [takeWhile](takewhile.md)!
+:bulb: 만약 여러분이 특정 로직이나, 다른 옵저버블을 기반으로 여러 값들을 받고싶다면,  [takeUntil](takeuntil.md) 이나 [takeWhile](takewhile.md) 를 확인해보세요!
 
-:bulb: `take` is the opposite of [`skip`](skip.md) where `take` will take the first _n_ number of emissions while `skip` will skip the first _n_ number of emissions.
+:bulb: `take` 는 첫 n개의 값만 발생시키는 반면, 정반대인 [`skip`](skip.md) 은 첫 n개의 값을 건너뛰고 값을 발생시킵니다.
 
-### Examples
+### 예시
 
-**Example 1: Take 1 value from source**
+**예시 1: 소스로부터 1개의 값만 받기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-uk92ax?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/vaxitupiwi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/f9bz0tr3/) \)
 
@@ -23,15 +23,15 @@ When you are interested in only the first emission, you want to use `take`. Mayb
 import { of } from 'rxjs';
 import { take } from 'rxjs/operators';
 
-//emit 1,2,3,4,5
+//1,2,3,4,5를 발생시킵니다
 const source = of(1, 2, 3, 4, 5);
-//take the first emitted value then complete
+//발생된 값 중 첫번째 값만 받고 종료시킵니다.
 const example = source.pipe(take(1));
-//output: 1
+//결과: 1
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Take the first 5 values from source**
+**예시 2: 소스로부터 첫 5개의 값만 받기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-3ujuth?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/kexenuzulu/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/g1fhxgua/) \)
 
@@ -40,15 +40,15 @@ const subscribe = example.subscribe(val => console.log(val));
 import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
 
-//emit value every 1s
+//매 1초마다 값을 발생시킵니다
 const interval$ = interval(1000);
-//take the first 5 emitted values
+//발생된 값 중 첫 5개의 값만 받습니다
 const example = interval$.pipe(take(5));
-//output: 0,1,2,3,4
+//결과: 0,1,2,3,4
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 3: Taking first click location**
+**예시 3: 첫번째 클릭 위치를 받기**
 
 \([StackBlitz](https://stackblitz.com/edit/typescript-8g9xt5?file=index.ts&devtoolsheight=50) \| [jsFiddle](https://jsfiddle.net/ElHuy/9c5j064x/)\)
 
@@ -75,16 +75,16 @@ const oneClickEvent = fromEvent(document, 'click').pipe(
 const subscribe = oneClickEvent.subscribe();
 ```
 
-### Related Recipes
+### 관련 사용법
 
 * [Battleship Game](../../recipes/battleship-game.md)
 * [Memory Game](../../recipes/memory-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [take](https://rxjs.dev/api/operators/take)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
 
