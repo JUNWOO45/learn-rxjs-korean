@@ -295,50 +295,50 @@ fromEvent(button, 'click')
 
 ####  `switch` 연산자
 
-마치 전등처럼, `switch` 를 기반으로한 연산자는 현재 옵저버블을 끄고(unsubscribe) 데이터로부터 방출되는 새로운 옵저버블을 반환할 것입니다. Switch operators are useful in situations you don't want \(or need\) more than one active observable at a time:
+마치 전등처럼, `switch` 를 기반으로한 연산자는 현재 옵저버블을 끄고(unsubscribe) 데이터로부터 방출되는 새로운 옵저버블을 반환할 것입니다. Switch 연산자는 한 번에 두 개 이상의 옵저버블을 원하지 않는 경우에 유용합니다:
 
 ```javascript
 inputValueChanges
-  // only the last value is important, if new value comes through cancel previous request / observable
+  // 마지막 값이 중요하기때문에, 만약 새로운 값이 넘어온다면, 이전 리퀘스트나 옵저버블은 취소됩니다.
   .pipe(
-    // make GET request for data
+    // GET 리퀘스트를 보내봅시다.
     switchMap(requestObservable)
   )
   .subscribe();
 ```
 
-Switch based operators include `switchAll`, [`switchMap`](../operators/transformation/switchmap.md), and [`switchMapTo`](../operators/transformation/switchmapto.md).
+Switch 기반의 연산자에는 `switchAll`, [`switchMap`](../operators/transformation/switchmap.md), 그리고 [`switchMapTo`](../operators/transformation/switchmapto.md) 가 있습니다.
 
-#### Operators that `concat`
+#### `concat` 연산자
 
-Comparable to a line at the ATM machine, the next transaction can't begin until the previous completes. In observable terms, only one subscription will occur at a time, in order, triggered by the completion of the previous. These are useful in situations where order of execution is important:
+이전 작업이 완료되기 전까지는 다음 작업도 시작될 수 없는, ATM 기계 뒤에 줄서있는 모습으로 비유할 수 있습니다. 옵저버블의 관점에서 본다면, 한 번에 하나의 subscription만 가능하고, 순서를 지켜야하고, 또한 이전 작업이 완료되어야 다음 작업을 진행할 수 있습니다. 이 연산자는 실행 순서가 중요한 상황에서 매우 유용하게 쓰입니다:
 
 ```javascript
 concat(
   firstObservable,
-  // will begin when 'firstObservable` completes
+  // 'firstObservable`이 완료되어야 실행될 것입니다
   secondObservable,
-  // will begin when 'secondObservable` completes
+  // 'secondObservable`이 완료되어야 실행될 것입니다
   thirdObservable
 ).subscribe(values => {
-  // take action
+  // 로직 수행
 });
 ```
 
-Concat based operators include [`concat`](../operators/combination/concat.md), [`concatAll`](../operators/combination/concatall.md), [`concatMap`](../operators/transformation/concatmap.md), and [`concatMapTo`](../operators/transformation/concatmapto.md).
+Concat 연산자에는 [`concat`](../operators/combination/concat.md), [`concatAll`](../operators/combination/concatall.md), [`concatMap`](../operators/transformation/concatmap.md), 그리고[`concatMapTo`](../operators/transformation/concatmapto.md) 가 있습니다.
 
-#### Operators that `merge`
+####  `merge` 연산자
 
-Like your merging lane on the interstate, merge based operators support multiple active observables flowing into one lane in a first come first serve basis. Merge operators are useful in situations where you want to trigger an action when an event from one of many sources occurs:
+고속도로에서 여러개였던 차선이 하나의 차선으로 합쳐지는 모습처럼, merge 기반의 연산자는 선착순으로 하나의 차선으로 흐르는 복수개의 활성 옵저버블을 지원합니다. Merge 연산자는 여러 소스 중 하나에서 이벤트를 발생시키고, 그 이벤트가 어떠한 액션을 불러일으킬 때 유용합니다:
 
 ```javascript
 merge(firstObservable, secondObservable)
-  // any emissions from first or second observable as they occur
+  // 첫번째, 혹은 두번째 옵저버블에서 발생하는 모든 결과물
   .pipe(mergeMap(saveActivity))
   .subscribe();
 ```
 
-Merge based operators include [`merge`](../operators/combination/merge.md), [`mergeMap`](../operators/transformation/mergemap.md), `mergeMapTo` and [`mergeAll`](../operators/combination/mergeall.md).
+Merge 기반의 연산자에는 [`merge`](../operators/combination/merge.md), [`mergeMap`](../operators/transformation/mergemap.md), `mergeMapTo` 그리고 [`mergeAll`](../operators/combination/mergeall.md) 이 있습니다.
 
 ## Other similarities between operators
 
