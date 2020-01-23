@@ -2,19 +2,19 @@
 
 #### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
 
-## Map to observable, emit values.
+## 옵저버블과 매핑시킨 후 값을 발생시킵니다.
 
-:bulb: flatMap is an alias for mergeMap!
+:bulb: flatMap과 mergeMap은 같은겁니다!
 
-:bulb: If only one inner subscription should be active at a time, try [`switchMap`](switchmap.md)!
+:bulb: 한번에 하나의 내부 subscription만 활성화해야하는 경우, [`switchMap`](switchmap.md)을 살펴보세요!
 
-:bulb: If the order of emission and subscription of inner observables is important, try [`concatMap`](concatmap.md)!
+:bulb: 내부 옵저버블의 subscription과 값 발생의 순서가 중요하다면, [`concatMap`](concatmap.md)을 살펴보세요!
 
-### Why use `mergeMap`?
+### 왜 `mergeMap` 을 사용할까요?
 
-This operator is best used when you wish to flatten an inner observable but want to manually control the number of inner subscriptions.
+이 연산자는 내부 옵저버블은 평평하게 만들고 싶지만, 내부 subscription의 수는 조절하고싶을 때 가장 많이 쓰입니다.
 
-For instance, when using [`switchMap`](switchmap.md) each inner subscription is completed when the source emits, allowing only one active inner subscription. In contrast, `mergeMap` allows for multiple inner subscriptions to be active at a time. Because of this, one of the most common use-case for `mergeMap` is requests that should not be canceled, think writes rather than reads. Note that if order must be maintained [`concatMap`](concatmap.md) is a better option.
+예를 들어, when using [`switchMap`](switchmap.md) each inner subscription is completed when the source emits, allowing only one active inner subscription. In contrast, `mergeMap` allows for multiple inner subscriptions to be active at a time. Because of this, one of the most common use-case for `mergeMap` is requests that should not be canceled, think writes rather than reads. Note that if order must be maintained [`concatMap`](concatmap.md) is a better option.
 
 Be aware that because `mergeMap` maintains multiple active inner subscriptions at once it's possible to create a memory leak through long-lived inner subscriptions. A basic example would be if you were mapping to an observable with an inner timer, or a stream of dom events. In these cases, if you still wish to utilize `mergeMap` you may want to take advantage of another operator to manage the completion of the inner subscription, think [`take`](../filtering/take.md) or [`takeUntil`](../filtering/takeuntil.md). You can also limit the number of active inner subscriptions at a time with the `concurrent` parameter, seen in [example 5](mergemap.md#example-5-mergemap-with-concurrent-value).
 
