@@ -2,13 +2,13 @@
 
 #### signature: `takeUntil(notifier: Observable): Observable`
 
-## Emit values until provided observable emits.
+## 넘겨받은 옵저버블이 값을 발생시킬 때까지 값을 발생시킵니다.
 
-:bulb: If you only need a specific number of values, try [take](take.md)!
+:bulb: 구체적인 갯수의 값이 필요하면, [take](take.md)를 살펴보세요!
 
-### Examples
+### 예시
 
-**Example 1: Take values until timer emits**
+**예시 1: 타이머가 값을 발생시키기 전까지 값을 받습니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-ujwjbg?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/yevuhukeja/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/zbe9dzb9/) \)
 
@@ -17,17 +17,17 @@
 import { interval, timer } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-//emit value every 1s
+//매 1초마다 값을 발생시킵니다
 const source = interval(1000);
-//after 5 seconds, emit value
+//5초 뒤, 값을 발생시킵니다
 const timer$ = timer(5000);
-//when timer emits after 5s, complete source
+//타이머가 5초 뒤 값을 발생시키면, 완료시킵니다
 const example = source.pipe(takeUntil(timer$));
-//output: 0,1,2,3
+//결과: 0,1,2,3
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Take the first 5 even numbers**
+**예시 2: 첫 5개의 짝수를 받습니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-djhv7s?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/doquqecara/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/0dLeksLe/) \)
 
@@ -36,22 +36,22 @@ const subscribe = example.subscribe(val => console.log(val));
 import { interval } from 'rxjs/observable/interval';
 import { takeUntil, filter, scan, map, withLatestFrom } from 'rxjs/operators';
 
-//emit value every 1s
+//매 1초마다 값을 발생시킵니다
 const source = interval(1000);
-//is number even?
+//짝수 체크
 const isEven = val => val % 2 === 0;
-//only allow values that are even
+//짝수인 값만 받습니다
 const evenSource = source.pipe(filter(isEven));
-//keep a running total of the number of even numbers out
+//짝수의 합을 구합니다
 const evenNumberCount = evenSource.pipe(scan((acc, _) => acc + 1, 0));
-//do not emit until 5 even numbers have been emitted
+//5개의 짝수가 값을 발생시키기 전까진, 값을 발생시키지 않습니다
 const fiveEvenNumbers = evenNumberCount.pipe(filter(val => val > 5));
 
 const example = evenSource.pipe(
-  //also give me the current even number count for display
+  //현재 짝수의 갯수를 출력합니다
   withLatestFrom(evenNumberCount),
   map(([val, count]) => `Even number (${count}) : ${val}`),
-  //when five even numbers have been emitted, complete source observable
+  //5개의 짝수가 발생되어지면, 옵저버블을 종료시킵니다
   takeUntil(fiveEvenNumbers)
 );
 /*
@@ -64,7 +64,7 @@ const example = evenSource.pipe(
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 3: Take mouse events on mouse down until mouse up**
+**예시 3: 마우스가 올라갈 때까지, 마우스가 내려가는 마우스 이벤트를 받습니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-ug2ezf?file=index.ts&devtoolsheight=50) \)
 
@@ -77,7 +77,7 @@ const mousedown$ = fromEvent(document, 'mousedown');
 const mouseup$ = fromEvent(document, 'mouseup');
 const mousemove$ = fromEvent(document, 'mousemove');
 
-// after mousedown, take position until mouse up
+// 마우스가 아래로 내려가면, 마우스가 다시 올라갈 때까지 위치정보를 받습니다
 mousedown$
   .pipe(
     mergeMap(_ => {
@@ -86,7 +86,7 @@ mousedown$
           x: e.clientX,
           y: e.clientY
         })),
-        // complete inner observable on mouseup event
+        // mouseup 이벤트에대해 내부 옵저버블을 완료합니다
         takeUntil(mouseup$)
       );
     })
@@ -94,15 +94,15 @@ mousedown$
   .subscribe(console.log);
 ```
 
-### Related Recipes
+### 관련 사용법
 
 * [Lockscreen](../../recipes/lockscreen.md)
 * [Space Invaders Game](../../recipes/space-invaders-game.md)
 * [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 
-### Additional Resources
+### 추가 자료
 
-* [takeUntil](https://rxjs.dev/api/operators/takeUntil) :newspaper: - Official docs
+* [takeUntil](https://rxjs.dev/api/operators/takeUntil) :newspaper: - 공식 문서
 * [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) - Angular in Depth
 * [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video\_camera: :dollar: - John Linquist
 * [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app) :video\_camera: - Kwinten Pisman
