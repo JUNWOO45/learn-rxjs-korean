@@ -2,7 +2,7 @@
 
 #### signature: `single(a: Function): Observable`
 
-## 조건을 만족하는 단 하나의 아이템을 발생시킵니다.
+## 조건을 만족하는 아이템이 하나밖에 없는지 확인하고, 맞다면 값을 발생시킵니다.
 
 ### 예시
 
@@ -26,7 +26,6 @@ const subscribe = example.subscribe(val => console.log(val));
 ### 추가 자료
 
 * [single](https://rxjs.dev/api/operators/single) :newspaper: - 공식 문서
-
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts)
 
