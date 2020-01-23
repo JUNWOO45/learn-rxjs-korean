@@ -2,15 +2,15 @@
 
 #### signature: `reduce(accumulator: function, seed: any): Observable`
 
-## Reduces the values from source observable to a single value that's emitted when the source completes.
+## 옵저버블의 값을 완료되었을 때 발생하는 단일값으로 감소시킵니다.
 
-:bulb: Just like [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=a)
+:bulb: [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=a) 와 같습니다.
 
-:bulb: If you need the current accumulated value on each emission, try [scan](scan.md)!
+:bulb: 값이 발생할 때 마다, 현재 누적값이 필요한 경우엔 [scan](scan.md) 을 살펴보세요!
 
-### Examples
+### 예시
 
-**Example 1: Sum a stream of numbers**
+**예시 1: 숫자 스트림의 합계**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-hdsv5e?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/dakuneneho/edit?js,console) \| [jsFiddle](https://jsfiddle.net/f8fw7yka/) \)
 
@@ -21,15 +21,13 @@ import { reduce } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4);
 const example = source.pipe(reduce((acc, val) => acc + val));
-//output: Sum: 10'
+//결과: Sum: 10'
 const subscribe = example.subscribe(val => console.log('Sum:', val));
 ```
 
-### Additional Resources
+### 추가 자료
 
-* [reduce](https://rxjs.dev/api/operators/reduce)
-
-  :newspaper: - Official docs
+* [reduce](https://rxjs.dev/api/operators/reduce) :newspaper: - 공식 문서
 
 * [Scan\(\) vs reduce\(\) \| RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
 
