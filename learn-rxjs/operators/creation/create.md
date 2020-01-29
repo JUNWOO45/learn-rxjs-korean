@@ -2,11 +2,11 @@
 
 #### signature: `create(subscribe: function)`
 
-## Create an observable with given subscription function.
+## 주어진 subscription 함수로 옵저버블을 생성.
 
-### Examples
+### 예시
 
-**Example 1: Observable that emits multiple values**
+**예시 1: 여러개의 값을 내보내는 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-baxh98?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/qorugiwaba/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/td5107he/) \)
 
@@ -14,8 +14,7 @@
 // RxJS v6+
 import { Observable } from 'rxjs';
 /*
-  Create an observable that emits 'Hello' and 'World' on  
-  subscription.
+  subscription에서 'Hello' 와 'World'를 내보내는 옵저버블을 생성
 */
 const hello = Observable.create(function(observer) {
   observer.next('Hello');
@@ -23,11 +22,11 @@ const hello = Observable.create(function(observer) {
   observer.complete();
 });
 
-//output: 'Hello'...'World'
+//결과: 'Hello'...'World'
 const subscribe = hello.subscribe(val => console.log(val));
 ```
 
-**Example 2: Observable that emits even numbers on timer**
+**예시 2: 타이머에 맞춰서 짝수만 내보내는 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-xvezxn?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/lodilohate/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/vtozg6uf/) \)
 
@@ -36,7 +35,7 @@ const subscribe = hello.subscribe(val => console.log(val));
 import { Observable } from 'rxjs';
 
 /*
-  Increment value every 1s, emit even numbers.
+  매 1초마다 값을 증가시키고, 짝수만 내보낸다.
 */
 const evenNumbers = Observable.create(function(observer) {
   let value = 0;
@@ -49,19 +48,19 @@ const evenNumbers = Observable.create(function(observer) {
 
   return () => clearInterval(interval);
 });
-//output: 0...2...4...6...8
+//결과: 0...2...4...6...8
 const subscribe = evenNumbers.subscribe(val => console.log(val));
-//unsubscribe after 10 seconds
+//10초 후 unsubscribe
 setTimeout(() => {
   subscribe.unsubscribe();
 }, 10000);
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Creation operators: Create\(\)](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
 
