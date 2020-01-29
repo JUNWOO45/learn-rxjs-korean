@@ -2,17 +2,17 @@
 
 #### signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
-## Turn an array, promise, or iterable into an observable.
+## 배열, 프로미스, 이터러블을 옵저버블로 바꾼다.
 
-:bulb: This operator can be used to convert a promise to an observable!
+:bulb: 이 연산자는 프로미스를 옵저버블로 바꿀때 사용될 수 있습니다!
 
-:bulb: For arrays and iterables, all contained values will be emitted as a sequence!
+:bulb: 배열과 이터러블의 경우, 포함된 모든 값들이 순차적으로 내보내집니다!
 
-:bulb: This operator can also be used to emit a string as a sequence of characters!
+:bulb: 이 연산자는 또한 문자열을 순서대로 내보내는 데 사용될 수 있습니다!
 
-### Examples
+### 예시
 
-**Example 1: Observable from array**
+**예시 1: 배열에서의 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-sckwsw?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/foceyuketi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/o7kb5e6j/) \)
 
@@ -20,13 +20,13 @@
 // RxJS v6+
 import { from } from 'rxjs';
 
-//emit array as a sequence of values
+//연속된 값으로 배열을 내보낸다
 const arraySource = from([1, 2, 3, 4, 5]);
-//output: 1,2,3,4,5
+//결과: 1,2,3,4,5
 const subscribe = arraySource.subscribe(val => console.log(val));
 ```
 
-**Example 2: Observable from promise**
+**예시 2: 프로미스에서의 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-clpg1f?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/tamofinujo/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/2czc5sae/) \)
 
@@ -34,13 +34,13 @@ const subscribe = arraySource.subscribe(val => console.log(val));
 // RxJS v6+
 import { from } from 'rxjs';
 
-//emit result of promise
+//프로미스의 결과값을 내보낸다
 const promiseSource = from(new Promise(resolve => resolve('Hello World!')));
-//output: 'Hello World'
+//결과: 'Hello World'
 const subscribe = promiseSource.subscribe(val => console.log(val));
 ```
 
-**Example 3: Observable from collection**
+**예시 3: 콜렉션에서의 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-drfckx?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/tezohobudu/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/ae6hu9a8/) \)
 
@@ -48,17 +48,16 @@ const subscribe = promiseSource.subscribe(val => console.log(val));
 // RxJS v6+
 import { from } from 'rxjs';
 
-//works on js collections
 const map = new Map();
 map.set(1, 'Hi');
 map.set(2, 'Bye');
 
 const mapSource = from(map);
-//output: [1, 'Hi'], [2, 'Bye']
+//결과: [1, 'Hi'], [2, 'Bye']
 const subscribe = mapSource.subscribe(val => console.log(val));
 ```
 
-**Example 4: Observable from string**
+**예시 4: 문자열에서의 옵저버블**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-19nejh?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/wenozubana/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/hfvzjcvL/) \)
 
@@ -66,24 +65,22 @@ const subscribe = mapSource.subscribe(val => console.log(val));
 // RxJS v6+
 import { from } from 'rxjs';
 
-//emit string as a sequence
+//문자열을 순서대로 내보낸다
 const source = from('Hello World');
-//output: 'H','e','l','l','o',' ','W','o','r','l','d'
+//결과: 'H','e','l','l','o',' ','W','o','r','l','d'
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [HTTP Polling](../../recipes/http-polling.md)
 * [Lockscreen](../../recipes/lockscreen.md)
 * [Memory Game](../../recipes/memory-game.md)
 * [Progress Bar](../../recipes/progressbar.md)
 
-### Additional Resources
+### 추가 자료
 
-* [from](https://rxjs.dev/api/index/function/from)
-
-  :newspaper: - Official docs
+* [from](https://rxjs.dev/api/index/function/from) :newspaper: - 공식 문서
 
 * [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
 
