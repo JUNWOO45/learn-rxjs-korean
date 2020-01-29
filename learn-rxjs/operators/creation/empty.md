@@ -57,11 +57,8 @@ const timer$ = merge(pause$, resume$)
 
 ### 추가 자료
 
-* [empty](https://rxjs.dev/api/index/function/empty) :newspaper: - 공식 문서
+* [empty](https://rxjs.dev/api/index/function/empty) 📰 - 공식 문서
+* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch) 📹 💵 - André Staltz
 
-* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)
 

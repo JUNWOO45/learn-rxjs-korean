@@ -4,7 +4,7 @@
 
 ## 주어진 subscription 함수로 옵저버블을 생성.
 
-:bulb: [`defer`](https://github.com/ReactiveX/rxjs/blob/ecc73d2a1564d0d3edffba90eec76510e509236c/src/internal/observable/iif.ts#L94-L100) 는 [`iif`](../conditional/iif.md) 연산자의 일부로 사용된다!
+💡 [`defer`](https://github.com/ReactiveX/rxjs/blob/ecc73d2a1564d0d3edffba90eec76510e509236c/src/internal/observable/iif.ts#L94-L100) 는 [`iif`](../conditional/iif.md) 연산자의 일부로 사용된다!
 
 ### 예시
 
@@ -47,8 +47,7 @@ setTimeout(() => {
 
 ### 추가 자료
 
-* [defer](https://rxjs.dev/api/index/function/defer) :newspaper: - 공식 문서
+* [defer](https://rxjs.dev/api/index/function/defer)  📰 - 공식 문서
 
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/defer.ts)
 

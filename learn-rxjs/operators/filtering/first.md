@@ -4,9 +4,9 @@
 
 ## 단순히 첫번째 값, 혹은 조건에 맞는 첫번째 값을 발생시킵니다
 
-:bulb: first의 정반대는 [**last**](last.md) 입니다!
+💡 first의 정반대는 [**last**](last.md) 입니다!
 
-:bulb: 만약 다음 통지가 전송되기 전에 옵저버블이 완료된다면, `First` 는 EmptyError를 옵저버의 콜백 에러에 전달합니다.이러한 동작을 원하지 않으면, `take(1)` 을 대신 사용하세요.
+💡 만약 다음 통지가 전송되기 전에 옵저버블이 완료된다면, `First` 는 EmptyError를 옵저버의 콜백 에러에 전달합니다.이러한 동작을 원하지 않으면, `take(1)` 을 대신 사용하세요.
 
 ### 예시
 
@@ -64,13 +64,8 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [first](https://rxjs.dev/api/operators/first)
+* [first](https://rxjs.dev/api/operators/first) 📰 - 공식 문서
+* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
 
-  :newspaper: - 공식 문서
-
-* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/first.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/first.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/first.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/first.ts)
 

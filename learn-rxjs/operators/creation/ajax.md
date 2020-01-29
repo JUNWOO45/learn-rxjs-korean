@@ -6,7 +6,7 @@
 
 ### 예시
 
-**예시 1: 요청(request)으로부터 반환되는 응답(response) 객체를 내보내는 옵저버블.**
+**예시 1: 요청\(request\)으로부터 반환되는 응답\(response\) 객체를 내보내는 옵저버블.**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-raqi89) \)
 
@@ -157,7 +157,7 @@ const subscribe = users.subscribe(
 
 ### 추가 자료
 
-* [ajax](https://rxjs.dev/api/ajax/ajax) :newspaper: - 공식 문서
+* [ajax](https://rxjs.dev/api/ajax/ajax) 📰 - 공식 문서
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts\#L20-L19](https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts#L20-L19)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts\#L20-L19](https://github.com/ReactiveX/rxjs/blob/6.4.0/src/internal/observable/dom/ajax.ts#L20-L19)
 

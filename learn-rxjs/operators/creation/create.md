@@ -58,17 +58,9 @@ setTimeout(() => {
 
 ### 추가 자료
 
-* [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create)
+* [create](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create) 📰 - 공식 문서
+* [Creation operators: Create\(\)](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch) 📹 💵 - André Staltz
+* [Using Observable.create for fine-grained control](https://egghead.io/lessons/rxjs-using-observable-create-for-fine-grained-control) 📹  💵 - Shane Osbourne
 
-  :newspaper: - 공식 문서
-
-* [Creation operators: Create\(\)](https://egghead.io/lessons/rxjs-creation-operator-create?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-
-  :video\_camera: :dollar: - André Staltz
-
-* [Using Observable.create for fine-grained control](https://egghead.io/lessons/rxjs-using-observable-create-for-fine-grained-control)
-
-  :video\_camera: :dollar: - Shane Osbourne
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/GenerateObservable.ts)
 

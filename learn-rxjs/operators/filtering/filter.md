@@ -4,7 +4,7 @@
 
 ## 주어진 조건을 만족하는 값을 발생시킵니다.
 
-:bulb: 주어진 조건을 만족하지 않을 때 옵저버블을 종료시키기 원한다면,  [takeWhile](takewhile.md) 을 살펴보세요!
+💡 주어진 조건을 만족하지 않을 때 옵저버블을 종료시키기 원한다면, [takeWhile](takewhile.md) 을 살펴보세요!
 
 ### 예시
 
@@ -77,21 +77,10 @@ const subscribe = example.subscribe(val =>
 
 ### 추가 자료
 
-* [filter](https://rxjs.dev/api/operators/filter)
+* [filter](https://rxjs.dev/api/operators/filter) 📰 - 공식 문서
+* [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs) 📹 💵 - John Linquist
+* [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
+* [Build your own filter operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=filter#app) 📹- Kwinten Pisman
 
-  :newspaper: - 공식 문서
-
-* [Adding conditional logic with filter](https://egghead.io/lessons/rxjs-adding-conditional-logic-with-filter?course=step-by-step-async-javascript-with-rxjs)
-
-  :video\_camera: :dollar: - John Linquist
-
-* [Filtering operator: filter](https://egghead.io/lessons/rxjs-filtering-operator-filter?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-* [Build your own filter operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=filter#app)
-
-  :video\_camera: - Kwinten Pisman
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/filter.ts)
 

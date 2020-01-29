@@ -25,7 +25,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [single](https://rxjs.dev/api/operators/single) :newspaper: - 공식 문서
+* [single](https://rxjs.dev/api/operators/single) 📰 - 공식 문서
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/single.ts)
 

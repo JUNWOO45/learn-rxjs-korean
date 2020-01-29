@@ -4,7 +4,7 @@
 
 ## 조건을 만족하는 첫번째 아이템을 발생시킨 이후, 완료합니다.
 
-:bulb: 조건과 상과없이 항상 첫번째 아이템을 발생시키길 원한다면,  [`first()`](first.md) 를 확인해보세요!
+💡 조건과 상과없이 항상 첫번째 아이템을 발생시키길 원한다면, [`first()`](first.md) 를 확인해보세요!
 
 ### 예시
 
@@ -38,7 +38,7 @@ clicks$
 
 ### 추가 자료
 
-* [find](https://rxjs.dev/api/operators/find) :newspaper: - 공식 문서
+* [find](https://rxjs.dev/api/operators/find) 📰 - 공식 문서
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/find.ts)
 

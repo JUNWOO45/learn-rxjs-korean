@@ -4,11 +4,11 @@
 
 ## 배열, 프로미스, 이터러블을 옵저버블로 바꾼다.
 
-:bulb: 이 연산자는 프로미스를 옵저버블로 바꿀때 사용될 수 있습니다!
+💡 이 연산자는 프로미스를 옵저버블로 바꿀때 사용될 수 있습니다!
 
-:bulb: 배열과 이터러블의 경우, 포함된 모든 값들이 순차적으로 내보내집니다!
+💡 배열과 이터러블의 경우, 포함된 모든 값들이 순차적으로 내보내집니다!
 
-:bulb: 이 연산자는 또한 문자열을 순서대로 내보내는 데 사용될 수 있습니다!
+💡 이 연산자는 또한 문자열을 순서대로 내보내는 데 사용될 수 있습니다!
 
 ### 예시
 
@@ -80,11 +80,8 @@ const subscribe = source.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [from](https://rxjs.dev/api/index/function/from) :newspaper: - 공식 문서
+* [from](https://rxjs.dev/api/index/function/from) 📰 - 공식 문서
+* [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch) 📹 💵 - André Staltz
 
-* [Creation operators: from, fromArray, fromPromise](https://egghead.io/lessons/rxjs-creation-operators-from-fromarray-frompromise?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/from.ts)
 

@@ -8,7 +8,7 @@
 
 Skip은 소스로부터 발생된 값들 중 순서대로 x개 만큼을 무시할 수 있게 해줍니다. `skip` 은 보통, subscription에 여러분이 항상 무시하고자하는 특정 값을 발생시키는 옵저버블이 있을때 사용됩니다. 아마 그러한 값들 중 몇몇개는 필요가 없는 값들이거나 `Replay` 혹은 `BehaviorSubject` 를 subscribing하고 있을 것입니다. 뒤늦게 발생하는 값들이 중요하다면, `skip` 을 사용해서 건너뛰세요.
 
-index가 있는  [`filter`](filter.md) 를 사용해서 `skip` 의 동작을 만들어낼 수도 있습니다. 예시: `.filter((val, index) => index > 1)`
+index가 있는 [`filter`](filter.md) 를 사용해서 `skip` 의 동작을 만들어낼 수도 있습니다. 예시: `.filter((val, index) => index > 1)`
 
 ### 예시
 
@@ -53,13 +53,8 @@ const filterObs = numArrayObs
 
 ### 추가 자료
 
-* [skip](https://rxjs.dev/api/operators/skip)
+* [skip](https://rxjs.dev/api/operators/skip) 📰 - 공식 문서
+* [Filtering 연산자: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) 📹💵 - André Staltz
 
-  :newspaper: - 공식 문서
-
-* [Filtering 연산자: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skip.ts)
+> 📂 소스 코드: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skip.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/skip.ts)
 
