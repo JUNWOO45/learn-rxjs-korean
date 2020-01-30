@@ -28,7 +28,6 @@ const subscribe = example.subscribe(val => console.log('Sum:', val));
 ### 추가 자료
 
 * [reduce](https://rxjs.dev/api/operators/reduce) :newspaper: - 공식 문서
-
 * [Scan\(\) vs reduce\(\) \| RxJS TUTORIAL](https://www.youtube.com/watch?v=myEeo2rZc3g)
 
   :video\_camera: - Academind

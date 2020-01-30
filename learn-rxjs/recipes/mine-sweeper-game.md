@@ -141,13 +141,13 @@ addElem(elem => ((elem.id = 'score'), (elem.innerText = '0')));
 
 ## Operators Used
 
-* [filter](../operators/filtering/filter.md)
-* [finalize](../operators/utility/finalize.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [of](../operators/creation/of.md)
-* [pluck](../operators/transformation/pluck.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
+* [filter](../recipes-1/filtering/filter.md)
+* [finalize](../recipes-1/utility/finalize.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [map](../recipes-1/transformation/map.md)
+* [of](../recipes-1/creation/of.md)
+* [pluck](../recipes-1/transformation/pluck.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
 

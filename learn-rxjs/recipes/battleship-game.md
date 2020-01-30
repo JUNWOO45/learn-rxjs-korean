@@ -539,21 +539,21 @@ export const COMPUTER = 'c';
 
 ## Operators Used
 
-* [concat](../operators/combination/concat.md)
-* [delay](../operators/utility/delay.md)
-* [filter](../operators/filtering/filter.md)
-* [finalize](../operators/utility/finalize.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [merge](../operators/combination/merge.md)
-* [of](../operators/creation/of.md)
+* [concat](../recipes-1/combination/concat.md)
+* [delay](../recipes-1/utility/delay.md)
+* [filter](../recipes-1/filtering/filter.md)
+* [finalize](../recipes-1/utility/finalize.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [merge](../recipes-1/combination/merge.md)
+* [of](../recipes-1/creation/of.md)
 * repeatWhen
-* [scan](../operators/transformation/scan.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [take](../operators/filtering/take.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [take](../recipes-1/filtering/take.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
 
 ## Subjects Used
 

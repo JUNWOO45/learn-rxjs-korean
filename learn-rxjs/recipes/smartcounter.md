@@ -150,11 +150,11 @@ export class NumberTrackerComponent implements OnDestroy {
 
 ## Operators Used
 
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [mapTo](../operators/transformation/mapto.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [map](../recipes-1/transformation/map.md)
+* [mapTo](../recipes-1/transformation/mapto.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
 

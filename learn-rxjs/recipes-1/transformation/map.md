@@ -65,7 +65,6 @@ const subscribe = example.subscribe(val => console.log(val));
 ### 추가 자료
 
 * [map](https://rxjs.dev/api/operators/map) :newspaper: - 공식 문서
-
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
 
   :video\_camera: - Ben Lesh

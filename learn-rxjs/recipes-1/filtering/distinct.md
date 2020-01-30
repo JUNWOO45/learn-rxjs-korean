@@ -50,6 +50,5 @@ OUTPUT:
 
 * [distinct](https://rxjs.dev/api/operators/distinct) :newspaper: - 공식 문서
 
-
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinct.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinct.ts)
 

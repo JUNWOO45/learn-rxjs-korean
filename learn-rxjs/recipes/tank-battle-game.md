@@ -242,10 +242,10 @@ export const paint = (state: State) => {
 
 ## Operators Used
 
-* [combineLatest](../operators/combination/combinelatest.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [tap](../operators/utility/do.md)
+* [combineLatest](../recipes-1/combination/combinelatest.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [tap](../recipes-1/utility/do.md)
 

@@ -152,16 +152,16 @@ export const render = ([player, ball, bricks]: [
 
 ## Operators Used
 
-* [combineLatest](../operators/combination/combinelatest.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [generate](../operators/creation/generate.md)
-* [interval](../operators/creation/interval.md)
-* [mergeMap](../operators/transformation/mergemap.md)
-* [of](../operators/creation/of.md)
-* [pluck](../operators/transformation/pluck.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
-* [toArray](../operators/transformation/toarray.md)
+* [combineLatest](../recipes-1/combination/combinelatest.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [generate](../recipes-1/creation/generate.md)
+* [interval](../recipes-1/creation/interval.md)
+* [mergeMap](../recipes-1/transformation/mergemap.md)
+* [of](../recipes-1/creation/of.md)
+* [pluck](../recipes-1/transformation/pluck.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
+* [toArray](../recipes-1/transformation/toarray.md)
 

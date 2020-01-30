@@ -90,11 +90,11 @@ export const clear = () => (document.body.innerText = '');
 <div>How fast can you click?!</div>
 ```
 
-* [finalize](../operators/utility/finalize.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [repeat](../operators/utility/repeat.md)
-* [scan](../operators/transformation/scan.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
-* [timeInterval](../operators/utility/timeinterval.md)
+* [finalize](../recipes-1/utility/finalize.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [repeat](../recipes-1/utility/repeat.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
+* [timeInterval](../recipes-1/utility/timeinterval.md)
 

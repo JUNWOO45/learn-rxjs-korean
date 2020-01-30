@@ -27,6 +27,5 @@ sub.next(5); // OUTPUT => 5,5 (양쪽 subscribers의 로그)
 
 * [ReplaySubject](https://rxjs-dev.firebaseapp.com/api/index/class/ReplaySubject) 📰 - 공식 문서
 
-
 > 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/ReplaySubject.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/ReplaySubject.ts)
 

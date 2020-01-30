@@ -1,6 +1,6 @@
 # Creation
 
-이 연산자들은 거의 모든 것들로부터 옵저버블을 만들 수 있습니다. 일반적인 사용 사례에서부터 특별한 사용 사례에 이르기까지 모든것을 [스트림으로 바꿀 수 있고](These operators allow the creation of an observable from nearly anything. From generic to specific use-cases you are free, and encouraged, to turn [everything into a stream](http://slides.com/robwormald/everything-is-a-stream#/).), 바꾸는 것을 권장합니다.
+이 연산자들은 거의 모든 것들로부터 옵저버블을 만들 수 있습니다. 일반적인 사용 사례에서부터 특별한 사용 사례에 이르기까지 모든것을 \[스트림으로 바꿀 수 있고\]\(These operators allow the creation of an observable from nearly anything. From generic to specific use-cases you are free, and encouraged, to turn [everything into a stream](http://slides.com/robwormald/everything-is-a-stream#/).\), 바꾸는 것을 권장합니다.
 
 ## 목차
 

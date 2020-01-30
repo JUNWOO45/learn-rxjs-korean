@@ -1,4 +1,4 @@
-# Recipes
+# 사용예시
 
 Common use-cases and interesting recipes to help learn RxJS.
 
