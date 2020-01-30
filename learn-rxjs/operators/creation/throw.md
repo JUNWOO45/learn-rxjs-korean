@@ -2,11 +2,11 @@
 
 #### signature: `throw(error: any, scheduler: Scheduler): Observable`
 
-## Emit error on subscription.
+## subscription 시 에러를 내보냅니다.
 
-### Examples
+### 예시
 
-**Example 1: Throw error on subscription**
+**예시 1: subscription시 에러를 내보냅니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-5d3stz?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/punubequju/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/mks82xqz/) \)
 
@@ -14,9 +14,9 @@
 // RxJS v6+
 import { throwError } from 'rxjs';
 
-//emits an error with specified value on subscription
+//subscription시 정해진 값의 에러를 내보냅니다.
 const source = throwError('This is an error!');
-//output: 'Error: This is an error!'
+//결과: 'Error: This is an error!'
 const subscribe = source.subscribe({
   next: val => console.log(val),
   complete: () => console.log('Complete!'),
@@ -24,15 +24,15 @@ const subscribe = source.subscribe({
 });
 ```
 
-### Related Examples
+### 관련된 사용법
 
 * [Throwing after 3 retries](../error_handling/retrywhen.md)
 
-### Additional Resources
+### 추가 자료
 
 * [throw](https://rxjs.dev/api/index/function/throw)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
 
