@@ -1,6 +1,6 @@
 # Table of contents
 
-* [RxJS 배우기](README.md)
+* [소개](README.md)
 
 ## Learn RxJS
 
