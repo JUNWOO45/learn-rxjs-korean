@@ -2,11 +2,11 @@
 
 #### signature: `interval(period: number, scheduler: Scheduler): Observable`
 
-## Emit numbers in sequence based on provided timeframe.
+## 주어진 시간에따라 연속된 수를 내보냅니다.
 
-### Examples
+### 예시
 
-**Example 1: Emit sequence of values at 1 second interval**
+**예시 1: 1초 간격으로 값을 내보냅니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-ohddud?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/vigohomabo/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/x3mrwzr0/) \)
 
@@ -14,13 +14,13 @@
 // RxJS v6+
 import { interval } from 'rxjs';
 
-//emit value in sequence every 1 second
+//매 1초마다 연속해서 값을 내보냅니다.
 const source = interval(1000);
-//output: 0,1,2,3,4,5....
+//결과: 0,1,2,3,4,5....
 const subscribe = source.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 * [Battleship Game](../../recipes/battleship-game.md)
@@ -37,11 +37,11 @@ const subscribe = source.subscribe(val => console.log(val));
 * [Tetris Game](../../recipes/tetris-game.md)
 * [Uncover Image Game](../../recipes/uncover-image-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [interval](https://rxjs.dev/api/index/function/interval)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Creation operators: interval and timer](https://egghead.io/lessons/rxjs-creation-operators-interval-and-timer?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
 
