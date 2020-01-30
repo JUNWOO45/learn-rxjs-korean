@@ -2,11 +2,11 @@
 
 #### signature: `map(project: Function, thisArg: any): Observable`
 
-## Apply projection with each value from source.
+## 각각의 값에 넘겨받은 콜백을 적용합니다.
 
-### Examples
+### 예시
 
-**Example 1: Add 10 to each number**
+**예시 1: 각각의 숫자에 10을 더합니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-a7bnxb?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/padasukano/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/yd38awLa/) \)
 
@@ -15,15 +15,15 @@
 import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-//emit (1,2,3,4,5)
+//(1,2,3,4,5) 발생시킵니다
 const source = from([1, 2, 3, 4, 5]);
-//add 10 to each value
+//각각의 값에 10을 더합니다
 const example = source.pipe(map(val => val + 10));
-//output: 11,12,13,14,15
+//결과: 11,12,13,14,15
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Map to single property**
+**예시 2: 단일 프로퍼티에 map사용하기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-qgpnju?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/detozumale/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/tdLd5tgc/) \)
 
@@ -32,19 +32,19 @@ const subscribe = example.subscribe(val => console.log(val));
 import { from } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-//emit ({name: 'Joe', age: 30}, {name: 'Frank', age: 20},{name: 'Ryan', age: 50})
+// ({name: 'Joe', age: 30}, {name: 'Frank', age: 20},{name: 'Ryan', age: 50}) 를 발생시킵니다
 const source = from([
   { name: 'Joe', age: 30 },
   { name: 'Frank', age: 20 },
   { name: 'Ryan', age: 50 }
 ]);
-//grab each persons name, could also use pluck for this scenario
+//name값만 가지고옵니다. 이번 예시에서는 pluck을 사용해도 같은 결과를 만들어낼 수 있습니다.
 const example = source.pipe(map(({ name }) => name));
-//output: "Joe","Frank","Ryan"
+//결과: "Joe","Frank","Ryan"
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 * [Battleship Game](../../recipes/battleship-game.md)
@@ -62,12 +62,9 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Tetris Game](../../recipes/tetris-game.md)
 * [Type Ahead](../../recipes/type-ahead.md)
 
-### Additional Resources
+### 추가 자료
 
-* [map](https://rxjs.dev/api/operators/map)
-
-  :newspaper: - Official docs
-
+* [map](https://rxjs.dev/api/operators/map) :newspaper: - 공식 문서
 * [map vs flatMap](https://egghead.io/lessons/rxjs-rxjs-map-vs-flatmap)
 
   :video\_camera: - Ben Lesh

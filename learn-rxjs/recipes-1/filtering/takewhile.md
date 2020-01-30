@@ -4,7 +4,7 @@
 
 ## 넘겨받은 표현식이 참인 동안, 값을 발생시킵니다.
 
-:bulb: 옵션 파라미터인 `inclusive` 가 `true` 로 지정되면, 참을 만족하지못하는 첫번째 아이템 또한 발생시킵니다. 
+💡 옵션 파라미터인 `inclusive` 가 `true` 로 지정되면, 참을 만족하지못하는 첫번째 아이템 또한 발생시킵니다.
 
 ### 예시
 
@@ -87,13 +87,8 @@ source$
 
 ### 추가 자료
 
-* [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile)
+* [takeWhile](https://rxjs-dev.firebaseapp.com/api/operators/takeWhile) 📰 - 공식 문서
+* [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs) 📹💵 - John Linquist
 
-  :newspaper: - 공식 문서
-
-* [Completing a stream with takeWhile](https://egghead.io/lessons/rxjs-completing-a-stream-with-takewhile?course=step-by-step-async-javascript-with-rxjs)
-
-  :video\_camera: :dollar: - John Linquist
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeWhile.ts)
 

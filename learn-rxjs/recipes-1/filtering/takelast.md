@@ -4,7 +4,7 @@
 
 ## 마지막 n개의 값을 발생시키고 종료합니다
 
-:bulb: 여러개의 옵저버블에서 마지막으로 발생한 값만 필요하다면, 여러개의 옵저버블이 완료된 후 [forkJoin](../combination/forkjoin.md) 을 사용해보세요!
+💡 여러개의 옵저버블에서 마지막으로 발생한 값만 필요하다면, 여러개의 옵저버블이 완료된 후 [forkJoin](../combination/forkjoin.md) 을 사용해보세요!
 
 ### 예시
 
@@ -26,9 +26,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast)
+* [takeLast](https://rxjs-dev.firebaseapp.com/api/operators/takeLast) 📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeLast.ts)
 

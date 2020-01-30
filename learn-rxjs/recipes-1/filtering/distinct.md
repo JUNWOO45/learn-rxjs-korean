@@ -2,11 +2,11 @@
 
 #### signature: `distinct(keySelector?, flushes?): Observable`
 
-## Emits items emitted that are distinct based on any previously emitted item.
+## 이전에 발생하지 않았던 아이템을 발생시킵니다.
 
-### Examples
+### 예시
 
-**Example 1: distinct without selector**
+**예시 1: 선택자 없이 구분하기**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-distinct-example-wphfch?file=index.ts&devtoolsheight=100) \)
 
@@ -17,11 +17,11 @@ import { distinct } from 'rxjs/operators';
 
 of(1, 2, 3, 4, 5, 1, 2, 3, 4, 5)
   .pipe(distinct())
-  // OUTPUT: 1,2,3,4,5
+  // 결과: 1,2,3,4,5
   .subscribe(console.log);
 ```
 
-**Example 2: distinct with key selector**
+**예시 2: key값으로 구분하기**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-distinct-example?file=index.ts&devtoolsheight=100) \)
 
@@ -46,11 +46,9 @@ OUTPUT:
  */
 ```
 
-### Additional Resources
+### 추가 자료
 
-* [distinct](https://rxjs.dev/api/operators/distinct) :newspaper: - Official
-
-  docs
+* [distinct](https://rxjs.dev/api/operators/distinct) :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinct.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/distinct.ts)
 

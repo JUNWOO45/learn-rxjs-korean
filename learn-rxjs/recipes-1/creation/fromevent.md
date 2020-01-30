@@ -2,11 +2,11 @@
 
 #### signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
 
-## Turn event into observable sequence.
+## 이벤트를 옵저버블로 전환해줍니다.
 
-### Examples
+### 예시
 
-**Example 1: Observable from mouse clicks**
+**예시 1: 마우스 클릭을 옵저버블로 전환**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-mfyefr?file=index.ts&devtoolsheight=50) \| [jsBin](http://jsbin.com/xikapewoqa/1/edit?js,console,output) \| [jsFiddle](https://jsfiddle.net/btroncone/vbLz1pdx/) \)
 
@@ -15,15 +15,15 @@
 import { fromEvent } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-//create observable that emits click events
+// 클릭 이벤트를 내보내는 옵저버블을 생성합니다
 const source = fromEvent(document, 'click');
-//map to string with given event timestamp
+//주어진 이벤트 타임스탬프를 사용하여 문자열에 맵핑합니다
 const example = source.pipe(map(event => `Event time: ${event.timeStamp}`));
-//output (example): 'Event time: 7276.390000000001'
+//결과 (예시): 'Event time: 7276.390000000001'
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 * [Battleship Game](../../recipes/battleship-game.md)
@@ -50,11 +50,11 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Type Ahead](../../recipes/type-ahead.md)
 * [Uncover Image Game](../../recipes/uncover-image-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [fromEvent](https://rxjs.dev/api/index/function/fromEvent)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/fromEvent.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/fromEvent.ts)
 

@@ -101,12 +101,12 @@ _Thanks to_ [_@johnlinquist_](https://twitter.com/johnlindquist) _for the additi
 
 ## Operators Used
 
-* [concatAll](../operators/combination/concatall.md)
-* [delay](../operators/utility/delay.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [from](../operators/creation/from.md)
-* [scan](../operators/transformation/scan.md)
-* [share](../operators/multicasting/share.md)
-* [switchMap](../operators/transformation/switchmap.md)
+* [concatAll](../recipes-1/combination/concatall.md)
+* [delay](../recipes-1/utility/delay.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [from](../recipes-1/creation/from.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [share](../recipes-1/multicasting/share.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
 * [withLatestFrom](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/transformation/withlatestfrom.md)
 

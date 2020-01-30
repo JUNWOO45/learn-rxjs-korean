@@ -122,11 +122,11 @@ export const paint = (game: number[][], lives, score) => {
 
 ## Operators Used
 
-* [combineLatest](../operators/combination/combinelatest.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [merge](../operators/combination/merge.md)
-* [scan](../operators/transformation/scan.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
+* [combineLatest](../recipes-1/combination/combinelatest.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [merge](../recipes-1/combination/merge.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
 

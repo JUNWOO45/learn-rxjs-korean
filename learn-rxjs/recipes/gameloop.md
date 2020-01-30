@@ -251,13 +251,13 @@ frames$
 
 ## Operators Used
 
-* [buffer](../operators/transformation/buffer.md)
+* [buffer](../recipes-1/transformation/buffer.md)
 * [bufferCount](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/transformation/bufferCount.md)
-* [expand](../operators/transformation/expand.md)
-* [filter](../operators/filtering/filter.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [share](../operators/multicasting/share.md)
-* [tap](../operators/utility/do.md)
+* [expand](../recipes-1/transformation/expand.md)
+* [filter](../recipes-1/filtering/filter.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [map](../recipes-1/transformation/map.md)
+* [share](../recipes-1/multicasting/share.md)
+* [tap](../recipes-1/utility/do.md)
 * [withLatestFrom](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/transformation/withlatestfrom.md)
 

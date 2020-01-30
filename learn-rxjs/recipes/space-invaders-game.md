@@ -266,13 +266,13 @@ export const paint = (
 
 ## Operators Used
 
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [repeat](../operators/utility/repeat.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [takeUntil](../operators/filtering/takeuntil.md)
-* [tap](../operators/utility/do.md)
-* [withLatestFrom](../operators/combination/withlatestfrom.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [repeat](../recipes-1/utility/repeat.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [takeUntil](../recipes-1/filtering/takeuntil.md)
+* [tap](../recipes-1/utility/do.md)
+* [withLatestFrom](../recipes-1/combination/withlatestfrom.md)
 

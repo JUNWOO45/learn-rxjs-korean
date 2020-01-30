@@ -8,9 +8,9 @@
 
 만약 여러분이 첫번째로 발생한 값만을 원한다면, `take` 를 사용하세요. 여러분은 사용자가 페이지에 들어와서 처음 클릭한 내용을 확인하거나, 클릭 이벤트를 구독한 뒤 가장 처음 발생한 값만을 보고싶을 수 있습니다. 또 다른 사례는 특정 시점에서 데이터 스냅샷을 작성해야 하지만, 이후 추가적인 값 발생은 원하지 않는 경우입니다. 예를 들어, 사용자 토큰 업데이트의 스트림이나, 앵귤러 애플리케이션에서의 라우트 가드 기반의 스트림이 있습니다.
 
-:bulb: 만약 여러분이 특정 로직이나, 다른 옵저버블을 기반으로 여러 값들을 받고싶다면,  [takeUntil](takeuntil.md) 이나 [takeWhile](takewhile.md) 를 확인해보세요!
+💡 만약 여러분이 특정 로직이나, 다른 옵저버블을 기반으로 여러 값들을 받고싶다면, [takeUntil](takeuntil.md) 이나 [takeWhile](takewhile.md) 를 확인해보세요!
 
-:bulb: `take` 는 첫 n개의 값만 발생시키는 반면, 정반대인 [`skip`](skip.md) 은 첫 n개의 값을 건너뛰고 값을 발생시킵니다.
+💡 `take` 는 첫 n개의 값만 발생시키는 반면, 정반대인 [`skip`](skip.md) 은 첫 n개의 값을 건너뛰고 값을 발생시킵니다.
 
 ### 예시
 
@@ -82,17 +82,9 @@ const subscribe = oneClickEvent.subscribe();
 
 ### 추가 자료
 
-* [take](https://rxjs.dev/api/operators/take)
+* [take](https://rxjs.dev/api/operators/take) 📰 - 공식 문서
+* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
+* [Build your own take operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=take#app) 📹- Kwinten Pisman
 
-  :newspaper: - 공식 문서
-
-* [Filtering operator: take, first, skip](https://egghead.io/lessons/rxjs-filtering-operators-take-first-skip?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-* [Build your own take operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=take#app)
-
-  :video\_camera: - Kwinten Pisman
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/take.ts)
 

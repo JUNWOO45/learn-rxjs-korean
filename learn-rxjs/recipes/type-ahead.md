@@ -59,11 +59,11 @@ Get continents
 
 ## Operators Used
 
-* [debounceTime](../operators/filtering/debouncetime.md)
-* [distinctUntilChanged](../operators/filtering/distinctuntilchanged.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [map](../operators/transformation/map.md)
-* [of](../operators/creation/of.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [tap](../operators/utility/do.md)
+* [debounceTime](../recipes-1/filtering/debouncetime.md)
+* [distinctUntilChanged](../recipes-1/filtering/distinctuntilchanged.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [map](../recipes-1/transformation/map.md)
+* [of](../recipes-1/creation/of.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [tap](../recipes-1/utility/do.md)
 

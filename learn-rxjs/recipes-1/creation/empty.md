@@ -2,11 +2,11 @@
 
 #### signature: `empty(scheduler: Scheduler): Observable`
 
-## Observable that immediately completes.
+## 즉시 완료되는 옵저버블.
 
-### Examples
+### 예시
 
-**Example 1: empty immediately completes**
+**예시 1: empty 는 즉시 완료시킨다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-aqfpkq?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/rodubucaqa/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/bz71mzuy/) \)
 
@@ -14,14 +14,14 @@
 // RxJS v6+
 import { empty } from 'rxjs';
 
-//output: 'Complete!'
+//결과: 'Complete!'
 const subscribe = empty().subscribe({
   next: () => console.log('Next'),
   complete: () => console.log('Complete!')
 });
 ```
 
-**Example 2: empty with timer**
+**예시 2: 타이머를 사용하는 empty**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-uujo8t?file=index.ts&devtoolsheight=50) \)
 
@@ -42,7 +42,7 @@ const resume$ = fromEvent(resumeButton, 'click').pipe(mapTo(true));
 const timer$ = merge(pause$, resume$)
   .pipe(
     startWith(true),
-    // if timer is paused return empty observable
+    // 타이머가 멈추면, 빈 옵저버블을 반환한다
     switchMap(val => (val ? interval$ : empty())),
     scan((acc, curr) => (curr ? curr + acc : acc), countdownSeconds),
     takeWhile(v => v >= 0)
@@ -50,20 +50,15 @@ const timer$ = merge(pause$, resume$)
   .subscribe(setHTML('remaining'));
 ```
 
-### Related Recipes
+### 관련한 사용법
 
 * [Memory Game](../../recipes/memory-game.md)
 * [Save Indicator](../../recipes/save-indicator.md)
 
-### Additional Resources
+### 추가 자료
 
-* [empty](https://rxjs.dev/api/index/function/empty)
+* [empty](https://rxjs.dev/api/index/function/empty) 📰 - 공식 문서
+* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch) 📹 💵 - André Staltz
 
-  :newspaper: - Official docs
-
-* [Creation operators: empty, never, and throw](https://egghead.io/lessons/rxjs-creation-operators-empty-never-throw?course=rxjs-beyond-the-basics-creating-observables-from-scratch)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/EmptyObservable.ts)
 

@@ -4,7 +4,7 @@
 
 ## 넘겨받은 옵저버블이 값을 발생시킬 때까지 값을 발생시킵니다.
 
-:bulb: 구체적인 갯수의 값이 필요하면, [take](take.md)를 살펴보세요!
+💡 구체적인 갯수의 값이 필요하면, [take](take.md)를 살펴보세요!
 
 ### 예시
 
@@ -102,10 +102,10 @@ mousedown$
 
 ### 추가 자료
 
-* [takeUntil](https://rxjs.dev/api/operators/takeUntil) :newspaper: - 공식 문서
+* [takeUntil](https://rxjs.dev/api/operators/takeUntil) 📰 - 공식 문서
 * [Avoiding takeUntil leaks](https://blog.angularindepth.com/rxjs-avoiding-takeuntil-leaks-fb5182d047ef) - Angular in Depth
-* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) :video\_camera: :dollar: - John Linquist
-* [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app) :video\_camera: - Kwinten Pisman
+* [Stopping a stream with takeUntil](https://egghead.io/lessons/rxjs-stopping-a-stream-with-takeuntil?course=step-by-step-async-javascript-with-rxjs) 📹 💵 - John Linquist
+* [Build your own takeUntil operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=takeUntil#app) 📹 - Kwinten Pisman
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/takeUntil.ts)
 

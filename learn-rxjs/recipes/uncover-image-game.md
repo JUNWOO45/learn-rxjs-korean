@@ -298,13 +298,13 @@ export { paintGame, paintGameOver }
 
 ## Operators Used
 
-* [finalize](../operators/utility/finalize.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [pluck](../operators/transformation/pluck.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
-* [withLatestFrom](../operators/combination/withlatestfrom.md)
+* [finalize](../recipes-1/utility/finalize.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [pluck](../recipes-1/transformation/pluck.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
+* [withLatestFrom](../recipes-1/combination/withlatestfrom.md)
 

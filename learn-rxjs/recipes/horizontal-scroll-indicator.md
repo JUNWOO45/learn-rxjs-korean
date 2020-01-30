@@ -55,7 +55,7 @@ Scroll down!!!
 
 ## Operators Used
 
-* [fromEvent](../operators/creation/fromevent.md)
-* [tap](../operators/utility/do.md)
-* [throttleTime](../operators/filtering/throttletime.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [tap](../recipes-1/utility/do.md)
+* [throttleTime](../recipes-1/filtering/throttletime.md)
 
