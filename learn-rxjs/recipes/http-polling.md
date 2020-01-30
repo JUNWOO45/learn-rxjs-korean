@@ -166,15 +166,15 @@ fromEvent(startButton, 'click')
 
 ## Operators Used
 
-* [filter](../operators/filtering/filter.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [from](../operators/creation/from.md)
-* [map](../operators/transformation/map.md)
+* [filter](../recipes-1/filtering/filter.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [from](../recipes-1/creation/from.md)
+* [map](../recipes-1/transformation/map.md)
 * [mapTo](https://github.com/JUNWOO45/learn-rxjs-korean/tree/8c9661a5ef018c109eae0814410977d79cebac1b/operators/transformation/mapTo.md)
-* [merge](../operators/combination/merge.md)
-* [mergeMap](../operators/transformation/mergemap.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [timer](../operators/creation/timer.md)
+* [merge](../recipes-1/combination/merge.md)
+* [mergeMap](../recipes-1/transformation/mergemap.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [timer](../recipes-1/creation/timer.md)
 
 ### Example 2: Simple http polling
 

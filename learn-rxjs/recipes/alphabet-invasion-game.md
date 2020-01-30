@@ -111,12 +111,12 @@ export interface State {
 ## Operators Used
 
 * [BehaviorSubject](../subjects/behaviorsubject.md)
-* [combineLatest](../operators/combination/combinelatest.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
+* [combineLatest](../recipes-1/combination/combinelatest.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
 

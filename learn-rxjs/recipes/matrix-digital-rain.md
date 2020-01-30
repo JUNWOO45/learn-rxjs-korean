@@ -78,6 +78,6 @@ export const render = matrix => {
 
 ## Operators Used
 
-* [interval](../operators/creation/interval.md)
-* [scan](../operators/transformation/scan.md)
+* [interval](../recipes-1/creation/interval.md)
+* [scan](../recipes-1/transformation/scan.md)
 

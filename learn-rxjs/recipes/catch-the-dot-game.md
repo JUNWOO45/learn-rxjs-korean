@@ -109,11 +109,11 @@ export const resetDotSize = () => setDotSize(30);
 <div id="dot"></div>
 ```
 
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [scan](../operators/transformation/scan.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
 

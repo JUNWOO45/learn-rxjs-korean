@@ -1,4 +1,4 @@
-# Operators
+# 연산자
 
 A complete list of RxJS operators with clear explanations, relevant resources, and executable examples.
 

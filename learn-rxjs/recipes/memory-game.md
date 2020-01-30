@@ -150,18 +150,18 @@ game$.subscribe();
 
 ## Operators Used
 
-* [empty](../operators/creation/empty.md)
-* [from](../operators/creation/from.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [generate](../operators/creation/generate.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [merge](../operators/combination/merge.md)
+* [empty](../recipes-1/creation/empty.md)
+* [from](../recipes-1/creation/from.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [generate](../recipes-1/creation/generate.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [merge](../recipes-1/combination/merge.md)
 * noop
-* [pluck](../operators/transformation/pluck.md)
-* [scan](../operators/transformation/scan.md)
-* [sequenceEqual](../operators/conditional/sequenceequal.md)
-* [switchMap](../operators/transformation/switchmap.md)
-* [take](../operators/filtering/take.md)
-* [tap](../operators/utility/do.md)
+* [pluck](../recipes-1/transformation/pluck.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [sequenceEqual](../recipes-1/conditional/sequenceequal.md)
+* [switchMap](../recipes-1/transformation/switchmap.md)
+* [take](../recipes-1/filtering/take.md)
+* [tap](../recipes-1/utility/do.md)
 

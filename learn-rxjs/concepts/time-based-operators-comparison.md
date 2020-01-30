@@ -4,11 +4,11 @@ RxJS offers a rich selection of time based operators but this diversity can come
 
 Compared operators:
 
-* [auditTime](../operators/filtering/audittime.md)
-* [bufferTime](../operators/transformation/buffertime.md)
-* [debounceTime](../operators/filtering/debouncetime.md)
+* [auditTime](../recipes-1/filtering/audittime.md)
+* [bufferTime](../recipes-1/transformation/buffertime.md)
+* [debounceTime](../recipes-1/filtering/debouncetime.md)
 * sampleTime
-* [throttleTime](../operators/filtering/throttletime.md)
+* [throttleTime](../recipes-1/filtering/throttletime.md)
 
 \( [Stackblitz](https://stackblitz.com/edit/rxjs-time-based-operators-comparison?file=index.ts&devtoolsheight=100)\)
 

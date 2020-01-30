@@ -57,6 +57,5 @@ const subscribe = example.subscribe(val => console.log(val));
 
 * [pluck](https://rxjs.dev/api/operators/pluck) :newspaper: - 공식 문서
 
-
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pluck.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/pluck.ts)
 

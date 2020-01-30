@@ -263,15 +263,15 @@ export const BRICK = 1;
 
 ## Operators Used
 
-* [combineLatest](../operators/combination/combinelatest.md)
-* [finalize](../operators/utility/finalize.md)
-* [fromEvent](../operators/creation/fromevent.md)
-* [interval](../operators/creation/interval.md)
-* [map](../operators/transformation/map.md)
-* [of](../operators/creation/of.md)
-* [pluck](../operators/transformation/pluck.md)
-* [scan](../operators/transformation/scan.md)
-* [startWith](../operators/combination/startwith.md)
-* [takeWhile](../operators/filtering/takewhile.md)
-* [tap](../operators/utility/do.md)
+* [combineLatest](../recipes-1/combination/combinelatest.md)
+* [finalize](../recipes-1/utility/finalize.md)
+* [fromEvent](../recipes-1/creation/fromevent.md)
+* [interval](../recipes-1/creation/interval.md)
+* [map](../recipes-1/transformation/map.md)
+* [of](../recipes-1/creation/of.md)
+* [pluck](../recipes-1/transformation/pluck.md)
+* [scan](../recipes-1/transformation/scan.md)
+* [startWith](../recipes-1/combination/startwith.md)
+* [takeWhile](../recipes-1/filtering/takewhile.md)
+* [tap](../recipes-1/utility/do.md)
 

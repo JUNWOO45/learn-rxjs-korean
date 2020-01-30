@@ -1,8 +1,6 @@
-# RxJS 배우기
+# 소개
 
-## RxJS 배우기
-
-RxJS에 대한 명확한 예제, 설명, 그리고 자료
+RxJS에 대한 명확한 예제, 설명, 그리고 자료를 준비했습니다.
 
 _By_ [_@btroncone_](https://twitter.com/BTroncone)
 
@@ -22,22 +20,22 @@ RxJS와 리액티브 프로그래밍을 배우는 것은 [어렵습니다](https
 
 #### Operators\(연산자\)
 
-Operators\(연산자\)는 복잡한 비동기 작업을 우아하고 선언적인 솔루션으로 해결해주는 강력한 기술입니다. 이번 섹션은 모든 [RxJS 연산자](learn-rxjs/operators/)와 실행 가능한 명확한 예제를 함께 포함하고 있습니다 . 추가 자료와 각각의 연산자에대한 적절한 사용법 또한 제공되고 있습니다.
+Operators\(연산자\)는 복잡한 비동기 작업을 우아하고 선언적인 솔루션으로 해결해주는 강력한 기술입니다. 이번 섹션은 모든 [RxJS 연산자](learn-rxjs/recipes-1/)와 실행 가능한 명확한 예제를 함께 포함하고 있습니다 . 추가 자료와 각각의 연산자에대한 적절한 사용법 또한 제공되고 있습니다.
 
 **Operator\(연산자\) 카테고리**
 
-* [Combination](learn-rxjs/operators/combination/)
-* [Conditional](learn-rxjs/operators/conditional/)
-* [Creation](learn-rxjs/operators/creation/)
-* [Error Handling](learn-rxjs/operators/error_handling/)
-* [Multicasting](learn-rxjs/operators/multicasting/)
-* [Filtering](learn-rxjs/operators/filtering/)
-* [Transformation](learn-rxjs/operators/transformation/)
-* [Utility](learn-rxjs/operators/utility/)
+* [Combination](learn-rxjs/recipes-1/combination/)
+* [Conditional](learn-rxjs/recipes-1/conditional/)
+* [Creation](learn-rxjs/recipes-1/creation/)
+* [Error Handling](learn-rxjs/recipes-1/error_handling/)
+* [Multicasting](learn-rxjs/recipes-1/multicasting/)
+* [Filtering](learn-rxjs/recipes-1/filtering/)
+* [Transformation](learn-rxjs/recipes-1/transformation/)
+* [Utility](learn-rxjs/recipes-1/utility/)
 
 **혹은...**
 
-[알파벳 순으로 나열](learn-rxjs/operators/complete.md)
+[알파벳 순으로 나열](learn-rxjs/recipes-1/complete.md)
 
 #### Subjects 이해하기
 
