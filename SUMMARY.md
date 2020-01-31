@@ -143,7 +143,7 @@
   * [Uncover Image Game](learn-rxjs/recipes/uncover-image-game.md)
 * [개념](learn-rxjs/concepts/README.md)
   * [RxJS 입문서](learn-rxjs/concepts/rxjs-primer.md)
-  * [RxJS v5 -&gt; v6 Upgrade](learn-rxjs/concepts/rxjs5-6.md)
+  * [RxJS v5 -&gt; v6 업그레이드](learn-rxjs/concepts/rxjs5-6.md)
   * [Time based operators comparison](learn-rxjs/concepts/time-based-operators-comparison.md)
   * [Understanding Operator Imports](learn-rxjs/concepts/operator-imports.md)
 
