@@ -1,10 +1,10 @@
 # 연산자
 
-A complete list of RxJS operators with clear explanations, relevant resources, and executable examples.
+명확한 설명, 관련된 자료 및 예제가 수록된 RxJS 연산자 목록
 
-[_Prefer a complete list in alphabetical order?_](complete.md)
+[_알파벳 순서로 보고 싶으신가요?_](complete.md)
 
-## Contents \(By Operator Type\)
+## 목차 \(연산자 타입으로 분류\)
 
 * [Combination](combination/)
   * [combineAll](combination/combineall.md)
@@ -112,13 +112,13 @@ A complete list of RxJS operators with clear explanations, relevant resources, a
   * [timeoutWith](utility/timeoutwith.md)
   * [toPromise](utility/topromise.md)
 
-:star: - _commonly used_
+:star: - _자주 사용되는 연산자_
 
-## Additional Resources
+## 추가 자료
 
 * [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
 
-  :newspaper: - Official Docs
+  :newspaper: - 공식 문서
 
 * [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
 
