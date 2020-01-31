@@ -1,10 +1,10 @@
-# Full Listing
+# 전체 목록
 
-A complete list of RxJS operators with clear explanations, relevant resources, and executable examples.
+명확한 설명, 관련된 자료 및 예제가 수록된 RxJS 연산자 목록
 
-[_Prefer a split by operator type?_](./)
+[_타입별로 정렬된 연산자 목록을 보고싶으신가요?_](./)
 
-## Contents \(In Alphabetical Order\)
+## 목록 \(알파벳 순서\)
 
 * [ajax](creation/ajax.md) :star:
 * [audit](filtering/audit.md)
@@ -101,13 +101,13 @@ A complete list of RxJS operators with clear explanations, relevant resources, a
 * [withLatestFrom](combination/withlatestfrom.md) :star:
 * [zip](combination/zip.md)
 
-:star: - _commonly used_
+:star: - _자주 사용되는 연산자_
 
-## Additional Resources
+## 추가 자료
 
 * [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
 
-  :newspaper: - Official Docs
+  :newspaper: - 공식 문서
 
 * [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
 
