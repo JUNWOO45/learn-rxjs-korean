@@ -109,7 +109,7 @@
     * [timeout](learn-rxjs/recipes-1/utility/timeout.md)
     * [timeoutWith](learn-rxjs/recipes-1/utility/timeoutwith.md)
     * [toPromise](learn-rxjs/recipes-1/utility/topromise.md)
-  * [Full Listing](learn-rxjs/recipes-1/complete.md)
+  * [전체 목록](learn-rxjs/recipes-1/complete.md)
 * [Subjects](learn-rxjs/subjects/README.md)
   * [AsyncSubject](learn-rxjs/subjects/asyncsubject.md)
   * [BehaviorSubject](learn-rxjs/subjects/behaviorsubject.md)
