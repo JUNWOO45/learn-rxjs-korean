@@ -1,4 +1,4 @@
-# Understanding Operator Imports
+# 연산자 imports의 이해
 
 A problem you may have run into in the past when consuming or creating a public library that depends on RxJS is handling operator inclusion. The most predominant way to include operators in your project is to import them like below:
 

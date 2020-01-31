@@ -144,6 +144,6 @@
 * [개념](learn-rxjs/concepts/README.md)
   * [RxJS 입문서](learn-rxjs/concepts/rxjs-primer.md)
   * [RxJS v5 -&gt; v6 업그레이드](learn-rxjs/concepts/rxjs5-6.md)
-  * [Time based operators comparison](learn-rxjs/concepts/time-based-operators-comparison.md)
-  * [Understanding Operator Imports](learn-rxjs/concepts/operator-imports.md)
+  * [시간 기반의 연산자 비교](learn-rxjs/concepts/time-based-operators-comparison.md)
+  * [연산자 imports의 이해](learn-rxjs/concepts/operator-imports.md)
 

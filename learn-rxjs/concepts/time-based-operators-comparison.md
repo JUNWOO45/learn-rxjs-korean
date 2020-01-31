@@ -1,4 +1,4 @@
-# Time based operators comparison
+# 시간 기반의 연산자 비교
 
 RxJS offers a rich selection of time based operators but this diversity can come at cost when choosing the right operator for a task at hand. Below is a visual comparison of popular time based operators.
 

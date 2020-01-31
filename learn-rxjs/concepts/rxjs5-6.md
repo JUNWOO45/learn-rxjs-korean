@@ -1,4 +1,4 @@
-# RxJS v5 -&gt; v6 업그레이드
+# RxJS v5 -&gt; v6 Upgrade
 
 Preparing to upgrade from RxJS v5 to v6? Here are some resources you might find handy:
 
