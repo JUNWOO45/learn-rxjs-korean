@@ -1,8 +1,8 @@
 # 시간 기반의 연산자 비교
 
-RxJS offers a rich selection of time based operators but this diversity can come at cost when choosing the right operator for a task at hand. Below is a visual comparison of popular time based operators.
+RxJS는 풍부한 양의 시간을 다루는 연산자를 제공하지만, 이러한 다양성은 종종 사용하려는 연산자가 적합한 연산자가 맞는지 헷갈리게 합니다. 빈번하게 사용되는 시간 연산자들을 시각화하여 비교해봅시다.
 
-Compared operators:
+비교할 연산자:
 
 * [auditTime](../recipes-1/filtering/audittime.md)
 * [bufferTime](../recipes-1/transformation/buffertime.md)
@@ -47,7 +47,7 @@ merge(
   intervaled(throttleTime(time), "throttleTime")
 ).subscribe();
 
-// output
+// 결과
 /*
 0
 throttleTime:0
