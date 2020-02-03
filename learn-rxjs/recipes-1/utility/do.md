@@ -2,13 +2,13 @@
 
 #### signature: `tap(nextOrObserver: function, error: function, complete: function): Observable`
 
-## Transparently perform actions or side-effects, such as logging.
+## 부작용없이 로깅과 같은 액션을 수행합니다.
 
-:bulb: If you are using as a pipeable operator, `do` is known as `tap`!
+:bulb: pipeable 연산자를 사용중이라면, `do` 대신  `tap` 을 사용하세요!
 
-### Examples
+### 예시
 
-**Example 1: Logging with tap**
+**예시 1: tap을 사용하여 로그찍기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-cd2gjp?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/jimazuriva/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/qtyakorq/) \)
 
@@ -18,19 +18,19 @@ import { of } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4, 5);
-// transparently log values from source with 'tap'
+// 'tap'을 사용하여 소스로부터 로그 값을 찍습니다.
 const example = source.pipe(
   tap(val => console.log(`BEFORE MAP: ${val}`)),
   map(val => val + 10),
   tap(val => console.log(`AFTER MAP: ${val}`))
 );
 
-//'tap' does not transform values
-//output: 11...12...13...14...15
+//'tap'은 값을 바꾸지 않습니다.
+//결과: 11...12...13...14...15
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Using tap with object**
+**예시 2: 객체에서 tap 사용하기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-3xykpb?file=index.ts&devtoolsheight=100)\)
 
@@ -41,13 +41,13 @@ import { tap, map } from 'rxjs/operators';
 
 const source = of(1, 2, 3, 4, 5);
 
-// tap also accepts an object map to log next, error, and complete
+// tap은 next, error, complete을 사용할 수 있습니다
 const example = source
   .pipe(
     map(val => val + 10),
     tap({
       next: val => {
-        // on next 11, etc.
+        // on next 11 이 찍힙니다.
         console.log('on next', val);
       },
       error: error => {
@@ -56,11 +56,11 @@ const example = source
       complete: () => console.log('on complete')
     })
   )
-  // output: 11, 12, 13, 14, 15
+  // 결과: 11, 12, 13, 14, 15
   .subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Battleship Game](../../recipes/battleship-game.md)
 * [Breakout Game](../../recipes/breakout-game.md)
@@ -82,9 +82,9 @@ const example = source
 * [Type Ahead](../../recipes/type-ahead.md)
 * [Uncover Image Game](../../recipes/uncover-image-game.md)
 
-### Additional Resources
+### 추가 자료
 
-* [tap](https://rxjs.dev/api/operators/tap) :newspaper: - Official docs
+* [tap](https://rxjs.dev/api/operators/tap) :newspaper: - 공식 문서
 * [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
 
   :video\_camera: :dollar: - John Linquist

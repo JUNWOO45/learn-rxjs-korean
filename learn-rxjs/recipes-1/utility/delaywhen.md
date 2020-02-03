@@ -2,11 +2,11 @@
 
 #### signature: `delayWhen(selector: Function, sequence: Observable): Observable`
 
-## Delay emitted values determined by provided function.
+## 주어진 함수의 조건만큼 기다린 후, 값을 내보냅니다
 
-### Examples
+### 예시
 
-**Example 1: Delay based on observable**
+**예시 1: 옵저버블 기반의 delayWhen**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-5yzn8g?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/topohekuje/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/b057mxkL/) \)
 
@@ -15,22 +15,22 @@
 import { interval, timer } from 'rxjs';
 import { delayWhen } from 'rxjs/operators';
 
-//emit value every second
+//매 초 마다 값을 내보냅니다.
 const message = interval(1000);
-//emit value after five seconds
+//5초 뒤 값을 내보냅니다.
 const delayForFiveSeconds = () => timer(5000);
-//after 5 seconds, start emitting delayed interval values
+//5초 뒤, 지연된 interval 값을 내보내기 시작합니다.
 const delayWhenExample = message.pipe(delayWhen(delayForFiveSeconds));
-//log values, delayed for 5 seconds
-//ex. output: 5s....1...2...3
+//로그 값은 5초 동안 지연되었습니다.
+//ex. 결과: 5s....1...2...3
 const subscribe = delayWhenExample.subscribe(val => console.log(val));
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [delayWhen](https://rxjs.dev/api/operators/delayWhen)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문써
 
 * [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
 
