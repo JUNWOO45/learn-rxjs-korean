@@ -2,11 +2,11 @@
 
 #### signature: `dematerialize(): Observable`
 
-## Turn notification objects into notification values.
+## 알림(notification) 객체를 값으로 바꾸어줍니다.
 
-### Examples
+### 예시
 
-**Example 1: Converting notifications to values**
+**예시 1: notifications를 값으로 바꾸어줍니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-bxdwbg?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/vafedocibi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/jw08mouy/) \)
 
@@ -15,16 +15,16 @@
 import { from, Notification } from 'rxjs';
 import { dematerialize } from 'rxjs/operators';
 
-//emit next and error notifications
+//next와 error 알림을 내보냅니다
 const source = from([
   Notification.createNext('SUCCESS!'),
   Notification.createError('ERROR!')
 ]).pipe(
-  //turn notification objects into notification values
+  //알림 객체를 알림 값으로 바꾸어줍니다
   dematerialize()
 );
 
-//output: 'NEXT VALUE: SUCCESS' 'ERROR VALUE: 'ERROR!'
+//결과: 'NEXT VALUE: SUCCESS' 'ERROR VALUE: 'ERROR!'
 const subscription = source.subscribe({
   next: val => console.log(`NEXT VALUE: ${val}`),
   error: val => console.log(`ERROR VALUE: ${val}`)
