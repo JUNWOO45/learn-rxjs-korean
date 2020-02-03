@@ -2,11 +2,11 @@
 
 #### signature: `finalize(callback: () => void)`
 
-## Call a function when observable completes or errors
+## 옵저버블이 완료되거나 에러 발생 시 함수를 호출합니다
 
-### Examples
+### 예시
 
-**Example 1: Execute callback function when the observable completes**
+**예시 1: 옵저버블이 완료될 때 콜백 함수를 실행시킵니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-ohddud) \)
 
@@ -14,17 +14,17 @@
 import { interval } from 'rxjs';
 import { take, finalize } from 'rxjs/operators';
 
-//emit value in sequence every 1 second
+//매 1초 마다 값을 발생시킵니다
 const source = interval(1000);
-//output: 0,1,2,3,4,5....
+//결과: 0,1,2,3,4,5....
 const example = source.pipe(
-  take(5), //take only the first 5 values
-  finalize(() => console.log('Sequence complete')) // Execute when the observable completes
+  take(5), //첫 5개의 값만 받습니다
+  finalize(() => console.log('Sequence complete')) // 옵저버블이 완료되면, 콜백함수를 실행시킵니다
 )
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Battleship Game](../../recipes/battleship-game.md)
 * [Car Racing Game](../../recipes/car-racing-game.md)
@@ -34,11 +34,11 @@ const subscribe = example.subscribe(val => console.log(val));
 * [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 * [Tetris Game](../../recipes/tetris-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [finalize](https://rxjs.dev/api/operators/finalize)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts)
 
