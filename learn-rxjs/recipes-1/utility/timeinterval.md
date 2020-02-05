@@ -2,11 +2,11 @@
 
 #### signature: `timeInterval(scheduler: *): Observable<TimeInterval<any>> | WebSocketSubject<T> | Observable<T>`
 
-## Convert an Observable that emits items into one that emits indications of the amount of time elapsed between those emissions
+## 내보내진 값들 사이의 경과된 시간을 변환합니다.
 
-### Examples
+### 예시
 
-**Example 1: Time between mouse clicks**
+**예시 1: 마우스 클릭 사이의 시간**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-time-interval?file=index.ts&devtoolsheight=50) \)
 
@@ -26,15 +26,15 @@ fromEvent(document, 'mousedown')
   );
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Click Ninja Game](../../recipes/click-ninja-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [timeInterval](https://rxjs.dev/api/operators/timeInterval)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts)
 
