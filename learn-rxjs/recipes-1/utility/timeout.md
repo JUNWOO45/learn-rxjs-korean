@@ -2,11 +2,11 @@
 
 #### signature: `timeout(due: number, scheduler: Scheduler): Observable`
 
-## Error if no value is emitted before specified duration
+## 지정된 기간 전에 값이 방출되지 않는 경우, 에러를 발생
 
-### Examples
+### 예시
 
-**Example 1: Timeout after 2.5 seconds**
+**예시 1: 2.5초 뒤에 Timeout**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-eegqyz?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/gonakiniho/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/nr4e1ofy/1/) \)
 
@@ -15,7 +15,7 @@
 import { of } from 'rxjs';
 import { concatMap, timeout, catchError, delay } from 'rxjs/operators';
 
-// simulate request
+// 요청을 수행하는 함수
 function makeRequest(timeToDelay) {
   return of('Request Complete!').pipe(delay(timeToDelay));
 }
@@ -37,11 +37,11 @@ of(4000, 3000, 2000)
   .subscribe(val => console.log(val));
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [timeout](https://rxjs.dev/api/operators/timeout)
 
-  :newspaper: - Official Docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts)
 
