@@ -2,13 +2,13 @@
 
 #### signature: `repeat(count: number): Observable`
 
-## Repeats an observable on completion.
+## 완료 시 옵저버블을 반복합니다.
 
-:bulb: Like [`retry`](../error_handling/retry.md) but for non error cases!
+:bulb: [`retry`](../error_handling/retry.md)와 같지만, 에러가 없는 경우에만 반복합니다!
 
-### Examples
+### 예시
 
-**Example 1: Repeat 3 times**
+**예시 1: 3번 반복합니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-repeat-learnrxjs?file=index.ts&devtoolsheight=100) \)
 
@@ -21,22 +21,22 @@ const delayedThing = of('delayed value').pipe(delay(2000));
 
 delayedThing
   .pipe(repeat(3))
-  // delayed value...delayed value...delayed value
+  // 값을 내보내는 것을 미루고... 또 미루고.. 또 미룹니다..
   .subscribe(console.log);
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Click Ninja Game](../../recipes/click-ninja-game.md)
 * [Lockscreen](../../recipes/lockscreen.md)
 * [Space Invaders Game](../../recipes/space-invaders-game.md)
 * [Swipe To Refresh](../../recipes/swipe-to-refresh.md)
 
-### Additional Resources
+### 추가 자료
 
 * [repeat](https://rxjs.dev/api/operators/repeat)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts)
 
