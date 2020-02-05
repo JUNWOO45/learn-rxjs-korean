@@ -21,7 +21,7 @@ const delayedThing = of('delayed value').pipe(delay(2000));
 
 delayedThing
   .pipe(repeat(3))
-  // 값을 내보내는 것을 미루고... 또 미루고.. 또 미룹니다..
+  // delayed value.. delayed value.. delayed value..
   .subscribe(console.log);
 ```
 
