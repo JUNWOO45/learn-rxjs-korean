@@ -2,11 +2,11 @@
 
 #### signature: `timeoutWith(due: number | Date, withObservable: ObservableInput, scheduler: SchedulerLike = async): OperatorFunction`
 
-## Subscribe to second Observable if no emission occurs in given time span.
+## 주어진 시간 범위 내에서 값이 내보내지지 않는다면, 두번째 옵저버블을 Subscribe합니다.
 
-### Examples
+### 예시
 
-**Example 1: Timeout after 1 second**
+**예시 1: 1초 후 Timeout**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-timeoutwith?file=index.ts&devtoolsheight=100) \)
 
@@ -28,18 +28,18 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
   .subscribe(console.log);
 
 /*
-  OUTPUT:
+  결과:
     logging request timeout
     !response!
     logging request timeout
 */
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith)
 
-  :newspaper: - Official Docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts)
 
