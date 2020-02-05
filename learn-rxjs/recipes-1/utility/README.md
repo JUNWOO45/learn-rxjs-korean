@@ -1,8 +1,8 @@
 # Utility
 
-From logging, handling notifications, to setting up schedulers, these operators provide helpful utilities in your observable toolkit.
+로깅, 알림 처리, 스케줄러 설정에 이르기까지, 이 연산자들을 옵저버블 툴킷에 도움이 되는 유용성들을 제공합니다.
 
-## Contents
+## 목차
 
 * [tap / do](do.md) :star:
 * [delay](delay.md) :star:
@@ -17,5 +17,5 @@ From logging, handling notifications, to setting up schedulers, these operators 
 * [timeoutWith](timeoutwith.md)
 * [toPromise](topromise.md)
 
-:star: - _commonly used_
+:star: - _자주 사용되는 연산자_
 
