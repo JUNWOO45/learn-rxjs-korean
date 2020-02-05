@@ -1,11 +1,11 @@
 # Utility
 
-로깅, 알림 처리, 스케줄러 설정에 이르기까지, 이 연산자들을 옵저버블 툴킷에 도움이 되는 유용성들을 제공합니다.
+로깅, 알림 처리, 스케줄러 설정에 이르기까지, 이 연산자 옵저버블 조작에 도움이 되는 유용한 기능을 제공합니다.
 
 ## 목차
 
-* [tap / do](do.md) :star:
-* [delay](delay.md) :star:
+* [tap / do](do.md) ⭐ 
+* [delay](delay.md) ⭐ 
 * [delayWhen](delaywhen.md)
 * [dematerialize](dematerialize.md)
 * [finalize / finally](finalize.md)
@@ -17,5 +17,5 @@
 * [timeoutWith](timeoutwith.md)
 * [toPromise](topromise.md)
 
-:star: - _자주 사용되는 연산자_
+⭐ - _자주 사용되는 연산자_
 

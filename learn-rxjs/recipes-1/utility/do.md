@@ -4,7 +4,7 @@
 
 ## 부작용없이 로깅과 같은 액션을 수행합니다.
 
-:bulb: pipeable 연산자를 사용중이라면, `do` 대신  `tap` 을 사용하세요!
+💡 pipeable 연산자를 사용중이라면, `do` 대신 `tap` 을 사용하세요!
 
 ### 예시
 
@@ -84,18 +84,10 @@ const example = source
 
 ### 추가 자료
 
-* [tap](https://rxjs.dev/api/operators/tap) :newspaper: - 공식 문서
-* [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs)
+* [tap](https://rxjs.dev/api/operators/tap) 📰 - 공식 문서
+* [Logging a stream with do](https://egghead.io/lessons/rxjs-logging-a-stream-with-do?course=step-by-step-async-javascript-with-rxjs) 📹 💵 - John Linquist
+* [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
+* [Build your own tap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=tap#app) 📹 - Kwinten Pisman
 
-  :video\_camera: :dollar: - John Linquist
-
-* [Utility operator: do](https://egghead.io/lessons/rxjs-utility-operator-do?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-* [Build your own tap operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=tap#app)
-
-  :video\_camera: - Kwinten Pisman
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/do.ts)
 

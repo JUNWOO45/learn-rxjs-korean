@@ -39,9 +39,7 @@ of(4000, 3000, 2000)
 
 ### 추가 자료
 
-* [timeout](https://rxjs.dev/api/operators/timeout)
+* [timeout](https://rxjs.dev/api/operators/timeout)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeout.ts)
 

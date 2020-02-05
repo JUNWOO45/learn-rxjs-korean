@@ -28,13 +28,8 @@ const subscribe = delayWhenExample.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [delayWhen](https://rxjs.dev/api/operators/delayWhen)
+* [delayWhen](https://rxjs.dev/api/operators/delayWhen) 📰 - 공식 문
+* [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
 
-  :newspaper: - 공식 문써
-
-* [Transformation operator: delay and delayWhen](https://egghead.io/lessons/rxjs-transformation-operators-delay-and-delaywhen?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delayWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delayWhen.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delayWhen.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/delayWhen.ts)
 

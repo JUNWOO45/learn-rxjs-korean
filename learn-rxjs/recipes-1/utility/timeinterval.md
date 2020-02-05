@@ -32,9 +32,7 @@ fromEvent(document, 'mousedown')
 
 ### 추가 자료
 
-* [timeInterval](https://rxjs.dev/api/operators/timeInterval)
+* [timeInterval](https://rxjs.dev/api/operators/timeInterval)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeInterval.ts)
 

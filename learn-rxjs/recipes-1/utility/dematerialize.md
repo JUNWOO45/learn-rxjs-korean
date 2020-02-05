@@ -2,7 +2,7 @@
 
 #### signature: `dematerialize(): Observable`
 
-## 알림(notification) 객체를 값으로 바꾸어줍니다.
+## 알림\(notification\) 객체를 값으로 바꾸어줍니다.
 
 ### 예시
 
@@ -33,9 +33,7 @@ const subscription = source.subscribe({
 
 ### 추가 자료
 
-* [dematerialize](https://rxjs.dev/api/operators/dematerialize)
+* [dematerialize](https://rxjs.dev/api/operators/dematerialize) 📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/demterialize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/dematerialize.ts)
 

@@ -36,9 +36,7 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [finalize](https://rxjs.dev/api/operators/finalize)
+* [finalize](https://rxjs.dev/api/operators/finalize)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/finalize.ts)
 

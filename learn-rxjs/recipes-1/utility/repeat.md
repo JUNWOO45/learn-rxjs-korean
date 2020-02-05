@@ -4,7 +4,7 @@
 
 ## 완료 시 옵저버블을 반복합니다.
 
-:bulb: [`retry`](../error_handling/retry.md)와 같지만, 에러가 없는 경우에만 반복합니다!
+💡 [`retry`](../error_handling/retry.md)와 같지만, 에러가 없는 경우에만 반복합니다!
 
 ### 예시
 
@@ -34,9 +34,7 @@ delayedThing
 
 ### 추가 자료
 
-* [repeat](https://rxjs.dev/api/operators/repeat)
+* [repeat](https://rxjs.dev/api/operators/repeat)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/repeat.ts)
 

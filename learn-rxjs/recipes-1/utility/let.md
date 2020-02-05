@@ -4,7 +4,7 @@
 
 ## Let me have the whole observable.
 
-:warning: `let` 은 pipeable 연산자가 등장하면서(RxJS 5.5+) 더 이상 사용할 수 없습니다!
+⚠ `let` 은 pipeable 연산자가 등장하면서\(RxJS 5.5+\) 더 이상 사용할 수 없습니다!
 
 ### Examples
 

@@ -4,7 +4,7 @@
 
 ## 옵저버블을 프로미스로 바꾸어줍니다.
 
-:warning: `toPromise` 는 옵저버블을 리턴하지 않기때문에, pipable 연산자가 아닙니다.
+⚠ `toPromise` 는 옵저버블을 리턴하지 않기때문에, pipable 연산자가 아닙니다.
 
 ### 예시
 
@@ -48,9 +48,7 @@ example().then(val => {
 
 ### 추가 자료
 
-* [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)
+* [toPromise](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/topromise.md)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toPromise.ts)
 

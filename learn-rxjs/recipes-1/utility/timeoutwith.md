@@ -37,9 +37,7 @@ of(timeoutThreshold + 1, timeoutThreshold - 1, timeoutThreshold + 3)
 
 ### 추가 자료
 
-* [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith)
+* [timeoutWith](https://rxjs-dev.firebaseapp.com/api/operators/timeoutWith)📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/timeoutWith.ts)
 
