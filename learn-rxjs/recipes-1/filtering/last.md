@@ -2,13 +2,13 @@
 
 #### signature: `last(predicate: function): Observable`
 
-## Emit the last value emitted from source on completion, based on provided expression.
+## 주어진 함수를 만족하는, 마지막으로 완료된 값을 내보냅니다.
 
-:bulb: The counterpart to last is [**first**](first.md)!
+:bulb: last의 반대는 [**first**](first.md) 입니다!
 
-### Examples
+### 예시
 
-**Example 1: Last value in sequence**
+**예시 1: 연속된 값들 중 마지막 값**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-ma7knv?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/pevaqeloki/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/b05r434a/) \)
 
@@ -18,13 +18,13 @@ import { from } from 'rxjs';
 import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
-//no arguments, emit last value
+//주어진 함수가 없으면, 마지막 값만 내보냅니다
 const example = source.pipe(last());
-//output: "Last value: 5"
+//결과: "Last value: 5"
 const subscribe = example.subscribe(val => console.log(`Last value: ${val}`));
 ```
 
-**Example 2: Last value to pass predicate**
+**예시 2: 주어진 함수를 만족하는 마지막 값**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-tk42hj?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/yagexuwari/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/pkx2btsh/) \)
 
@@ -34,15 +34,15 @@ import { from } from 'rxjs';
 import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
-//emit last even number
+//마지막 짝수를 내보냅니다
 const exampleTwo = source.pipe(last(num => num % 2 === 0));
-//output: "Last to pass test: 4"
+//결과: "Last to pass test: 4"
 const subscribeTwo = exampleTwo.subscribe(val =>
   console.log(`Last to pass test: ${val}`)
 );
 ```
 
-**Example 3: Last with default value**
+**예시 3: 주어진 함수를 만족하는 값이 없을때 내보내는 디폴트값을 설정할 수 있습니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-nrc1an?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/fudubebabi/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/L7fbx3vp/) \)
 
@@ -52,17 +52,17 @@ import { from } from 'rxjs';
 import { last } from 'rxjs/operators';
 
 const source = from([1, 2, 3, 4, 5]);
-//no values will pass given predicate, emit default
+//모든 값들이 주어진 함수를 만족하지 못하면, 디폴트값을 내보냅니다
 const exampleTwo = source.pipe(last(v => v > 5, 'Nothing!'));
-//output: 'Nothing!'
+//결과: 'Nothing!'
 const subscribeTwo = exampleTwo.subscribe(val => console.log(val));
 ```
 
-### Additional Resources
+### 추가 자료
 
 * [last](https://rxjs.dev/api/operators/last)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Filtering operator: takeLast, last](https://egghead.io/lessons/rxjs-filtering-operators-takelast-last?course=rxjs-beyond-the-basics-operators-in-depth)
 
