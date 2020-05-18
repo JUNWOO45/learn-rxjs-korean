@@ -50,17 +50,9 @@ const subscribe = example.subscribe(val => console.log(val));
 
 ### 추가 자료
 
-* [mapTo](https://rxjs.dev/api/operators/mapTo)
+* [mapTo](https://rxjs.dev/api/operators/mapTo) 📰 - 공식 문서
+* [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs) 📹 💵 - John Linquist
+* [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
 
-  :newspaper: - 공식 문서
-
-* [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs)
-
-  :video\_camera: :dollar: - John Linquist
-
-* [Transformation operator: map and mapTo](https://egghead.io/lessons/rxjs-transformation-operator-map-and-mapto?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mapTo.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mapTo.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/mapTo.ts)
 
