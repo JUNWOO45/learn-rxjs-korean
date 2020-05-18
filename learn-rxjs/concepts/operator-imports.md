@@ -23,7 +23,7 @@ declare module '../../Observable' {
 }
 ```
 
-이러한 방법은 개인 프로젝트나 개인 모듈에서는 문제가 없지만, 이렇게 가져온 것들을 조직 전체에서 사용할 [npm](https://www.npmjs.com/) 패키지나 라이브러리로 사용할 때 문제가 발생합니다. 
+이러한 방법은 개인 프로젝트나 개인 모듈에서는 문제가 없지만, 이렇게 가져온 것들을 조직 전체에서 사용할 [npm](https://www.npmjs.com/) 패키지나 라이브러리로 사용할 때 문제가 발생합니다.
 
 ## 간단한 예시
 
@@ -95,7 +95,7 @@ map.call(
 
 ## Pipeable 연산자
 
-RxJS는 이제  [`pipe`](https://github.com/ReactiveX/rxjs/blob/755df9bf908108974e38aaff79887279f2cde008/src/Observable.ts#L305-L329) 를 도입했습니다. 위에서 봤던 지저분한 코드를:
+RxJS는 이제 [`pipe`](https://github.com/ReactiveX/rxjs/blob/755df9bf908108974e38aaff79887279f2cde008/src/Observable.ts#L305-L329) 를 도입했습니다. 위에서 봤던 지저분한 코드를:
 
 ```javascript
 import { take, map } from 'rxjs/operators';
@@ -123,5 +123,5 @@ of(1,2,3)
   );
 ```
 
-더욱 읽기 쉬워졌죠? 이러한 방법은 애플리케이션의 RxJS 번들 사이즈를 줄여주는 효과도 가지고 있습니다. 더욱 자세히 알아보려면, [Ashwin Sureshkumar'의](https://twitter.com/Sureshkumar_Ash) 훌륭한 아티클인 Reduce Angular app bundle size using lettable operators](https://hackernoon.com/rxjs-reduce-bundle-size-using-lettable-operators-418307295e85) 를 읽어보세요.
+더욱 읽기 쉬워졌죠? 이러한 방법은 애플리케이션의 RxJS 번들 사이즈를 줄여주는 효과도 가지고 있습니다. 더욱 자세히 알아보려면, [Ashwin Sureshkumar'의\]\(https://twitter.com/Sureshkumar\_Ash\) 훌륭한 아티클인 Reduce Angular app bundle size using lettable operators](https://hackernoon.com/rxjs-reduce-bundle-size-using-lettable-operators-418307295e85) 를 읽어보세요.
 

@@ -2,7 +2,7 @@
 
 #### signature: `generate(initialStateOrOptions: GenerateOptions, condition?: ConditionFunc, iterate?: IterateFunc, resultSelectorOrObservable?: (ResultFunc) | SchedulerLike, scheduler?: SchedulerLike): Observable`
 
-## 지정된 스케줄러를 사용하여 반복문을 실행하여 옵저버블을 만들어냅니다. 
+## 지정된 스케줄러를 사용하여 반복문을 실행하여 옵저버블을 만들어냅니다.
 
 ### 예시
 

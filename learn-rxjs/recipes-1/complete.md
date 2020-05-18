@@ -6,43 +6,43 @@
 
 ## 목록 \(알파벳 순서\)
 
-* [ajax](creation/ajax.md) :star:
+* [ajax](creation/ajax.md) ⭐ 
 * [audit](filtering/audit.md)
 * [auditTime](filtering/audittime.md)
 * [buffer](transformation/buffer.md)
 * [bufferCount](transformation/buffercount.md)
-* [bufferTime](transformation/buffertime.md) :star:
+* [bufferTime](transformation/buffertime.md) ⭐ 
 * [bufferToggle](transformation/buffertoggle.md)
 * [bufferWhen](transformation/bufferwhen.md)
-* [catch / catchError](error_handling/catch.md) :star:
+* [catch / catchError](error_handling/catch.md) ⭐ 
 * [combineAll](combination/combineall.md)
-* [combineLatest](combination/combinelatest.md) :star:
-* [concat](combination/concat.md) :star:
+* [combineLatest](combination/combinelatest.md) ⭐ 
+* [concat](combination/concat.md) ⭐ 
 * [concatAll](combination/concatall.md)
-* [concatMap](transformation/concatmap.md) :star:
+* [concatMap](transformation/concatmap.md) ⭐ 
 * [concatMapTo](transformation/concatmapto.md)
 * [create](creation/create.md)
 * [debounce](filtering/debounce.md)
-* [debounceTime](filtering/debouncetime.md) :star:
+* [debounceTime](filtering/debouncetime.md) ⭐ 
 * [defaultIfEmpty](conditional/defaultifempty.md)
 * [defer](creation/defer.md)
 * [delay](utility/delay.md)
 * [delayWhen](utility/delaywhen.md)
 * [distinct](filtering/distinct.md)
-* [distinctUntilChanged](filtering/distinctuntilchanged.md) :star:
+* [distinctUntilChanged](filtering/distinctuntilchanged.md) ⭐ 
 * [distinctUntilKeyChanged](filtering/distinctuntilkeychanged.md)
 * [endWith](combination/endwith.md)
-* [tap / do](utility/do.md) :star:
+* [tap / do](utility/do.md) ⭐ 
 * [empty](creation/empty.md)
 * [every](conditional/every.md)
 * [exhaustMap](transformation/exhaustmap.md)
 * [expand](transformation/expand.md)
-* [filter](filtering/filter.md) :star:
+* [filter](filtering/filter.md) ⭐ 
 * [finalize / finally](utility/finalize.md)
 * [find](filtering/find.md)
 * [first](filtering/first.md)
 * [forkJoin](combination/forkjoin.md)
-* [from](creation/from.md) :star:
+* [from](creation/from.md) ⭐ 
 * [fromEvent](creation/fromevent.md)
 * [generate](creation/generate.md)
 * [groupBy](transformation/groupby.md)
@@ -51,14 +51,14 @@
 * [interval](creation/interval.md)
 * [last](filtering/last.md)
 * [let](utility/let.md)
-* [map](transformation/map.md) :star:
+* [map](transformation/map.md) ⭐ 
 * [mapTo](transformation/mapto.md)
-* [merge](combination/merge.md) :star:
+* [merge](combination/merge.md) ⭐ 
 * [mergeAll](combination/mergeall.md)
-* [mergeMap / flatMap](transformation/mergemap.md) :star:
+* [mergeMap / flatMap](transformation/mergemap.md) ⭐ 
 * [mergeScan](transformation/mergescan.md)
 * [multicast](multicasting/multicast.md)
-* [of](creation/of.md) :star:
+* [of](creation/of.md) ⭐ 
 * [partition](transformation/partition.md)
 * [pluck](transformation/pluck.md)
 * [publish](multicasting/publish.md)
@@ -69,20 +69,20 @@
 * [retry](error_handling/retry.md)
 * [retryWhen](error_handling/retrywhen.md)
 * [sample](filtering/sample.md)
-* [scan](transformation/scan.md) :star:
+* [scan](transformation/scan.md) ⭐ 
 * [sequenceequal](conditional/sequenceequal.md)
-* [share](multicasting/share.md) :star:
-* [shareReplay](multicasting/sharereplay.md) :star:
+* [share](multicasting/share.md) ⭐ 
+* [shareReplay](multicasting/sharereplay.md) ⭐ 
 * [single](filtering/single.md)
 * [skip](filtering/skip.md)
 * [skipUntil](filtering/skipuntil.md)
 * [skipWhile](filtering/skipwhile.md)
-* [startWith](combination/startwith.md) :star:
-* [switchMap](transformation/switchmap.md) :star:
+* [startWith](combination/startwith.md) ⭐ 
+* [switchMap](transformation/switchmap.md) ⭐ 
 * [switchMapTo](transformation/switchmapto.md)
-* [take](filtering/take.md) :star:
+* [take](filtering/take.md) ⭐ 
 * [takeLast](filtering/takelast.md)
-* [takeUntil](filtering/takeuntil.md) :star:
+* [takeUntil](filtering/takeuntil.md) ⭐ 
 * [takeWhile](filtering/takewhile.md)
 * [throttle](filtering/throttle.md)
 * [throttleTime](filtering/throttletime.md)
@@ -98,18 +98,13 @@
 * [windowTime](transformation/windowtime.md)
 * [windowToggle](transformation/windowtoggle.md)
 * [windowWhen](transformation/windowwhen.md)
-* [withLatestFrom](combination/withlatestfrom.md) :star:
+* [withLatestFrom](combination/withlatestfrom.md) ⭐ 
 * [zip](combination/zip.md)
 
-:star: - _자주 사용되는 연산자_
+⭐ - _자주 사용되는 연산자_
 
 ## 추가 자료
 
-* [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators)
-
-  :newspaper: - 공식 문서
-
-* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are)
-
-  :video\_camera: :dollar: - André Staltz
+* [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators) 📰 - 공식 문서
+* [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) 📹 💵 - André Staltz
 
