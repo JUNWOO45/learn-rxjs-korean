@@ -2,11 +2,11 @@
 
 #### signature: `mapTo(value: any): Observable`
 
-## Map emissions to constant value.
+## 방출되는 값을 일정한 값으로 매핑합니다.
 
-### Examples
+### 예시
 
-**Example 1: Map every emission to string**
+**예시 1: 방출되는 값을 문자열로 매핑합니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-fipd7a?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/qujolenili/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/4ojq56ng/) \)
 
@@ -15,15 +15,15 @@
 import { interval } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
-//emit value every two seconds
+//매 2초 마다 값을 방출시킵니다
 const source = interval(2000);
-//map all emissions to one value
+//방출되는 값들을 하나의 값으로 매핑시킵니다.
 const example = source.pipe(mapTo('HELLO WORLD!'));
-//output: 'HELLO WORLD!'...'HELLO WORLD!'...'HELLO WORLD!'...
+//결과물: 'HELLO WORLD!'...'HELLO WORLD!'...'HELLO WORLD!'...
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Mapping clicks to string**
+**예시 2: 클릭이벤트를 문자열로 매핑시킵니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-btghci?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/xaheciwara/1/edit?js,console,output) \| [jsFiddle](https://jsfiddle.net/btroncone/52fqL4nn/) \)
 
@@ -33,25 +33,26 @@ import { fromEvent } from 'rxjs';
 import { mapTo } from 'rxjs/operators';
 
 //emit every click on document
+//document에서 클릭이 발생할때마다 방출시킵니다.
 const source = fromEvent(document, 'click');
-//map all emissions to one value
+//방출되는 값들을 하나의 값으로 매핑시킵니다.
 const example = source.pipe(mapTo('GOODBYE WORLD!'));
-//output: (click)'GOODBYE WORLD!'...
+//결과물: (클릭)'GOODBYE WORLD!'...
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Related Recipes
+### 관련한 사용법
 
 * [HTTP Polling](../../recipes/http-polling.md)
 * \[Save Indicator\]\('../../recipes/save-indicator.md\)
 * [Smart Counter](../../recipes/smartcounter.md)
 * [Stop Watch](../../recipes/stop-watch.md)
 
-### Additional Resources
+### 추가 자료
 
 * [mapTo](https://rxjs.dev/api/operators/mapTo)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Changing behavior with mapTo](https://egghead.io/lessons/rxjs-changing-behavior-with-mapto?course=step-by-step-async-javascript-with-rxjs)
 
