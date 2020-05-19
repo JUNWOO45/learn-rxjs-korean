@@ -2,11 +2,11 @@
 
 #### signature: `toArray(): OperatorFunction`
 
-## Collects all source emissions and emits them as an array when the source completes.
+## 방출되는 값들을 모은 후, 소스 옵저버블 구독이 완료되면 배열형태로 내보냅니다.
 
-### Examples
+### 예시
 
-**Example 1: get values emitted by interval as an array when interval completes**
+**예시 1: 시간 간격을 두고 방출되는 값을 모으고, 인터벌이 완료되면 배열형태로 내보냅니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-toarray?file=index.ts&devtoolsheight=100) \)
 
@@ -22,19 +22,19 @@ interval(100)
   )
   .subscribe(console.log);
 
-// output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// 결과: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Breakout Game](../../recipes/breakout-game.md)
 * [Lockscreen](../../recipes/lockscreen.md)
 
-### Additional Resources
+### 추가 자료
 
 * [toArray](https://rxjs.dev/api/operators/toArray)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 > :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts)
 
