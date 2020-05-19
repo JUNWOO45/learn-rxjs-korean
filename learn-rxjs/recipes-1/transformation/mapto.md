@@ -44,7 +44,7 @@ const subscribe = example.subscribe(val => console.log(val));
 ### 관련한 사용법
 
 * [HTTP Polling](../../recipes/http-polling.md)
-* \[Save Indicator\]\('../../recipes/save-indicator.md\)
+* [Save Indicator](../../recipes/save-indicator.md)
 * [Smart Counter](../../recipes/smartcounter.md)
 * [Stop Watch](../../recipes/stop-watch.md)
 
