@@ -4,7 +4,7 @@
 
 ## 주어진 값을 처음으로 방출합니다.
 
-:bulb: [BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md) 또한 초기값부터 시작할 수 있습니다!
+💡 [BehaviorSubject](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/subjects/behaviorsubject.md) 또한 초기값부터 시작할 수 있습니다!
 
 ### 예시
 
@@ -87,19 +87,19 @@ const subscribe = example.subscribe(val => console.log(val));
 
 * [startWith](https://rxjs.dev/api/operators/startWith)
 
-  :newspaper: - 공식 문서
+  📰 - 공식 문서
 
 * [Displaying initial data with startWith](https://egghead.io/lessons/rxjs-displaying-initial-data-with-startwith?course=step-by-step-async-javascript-with-rxjs)
 
-  :video\_camera: :dollar: - John Linquist
+  📹 💵  - John Linquist
 
 * [Clear data while loading with startWith](https://egghead.io/lessons/rxjs-reactive-programming-clear-data-while-loading-with-rxjs-startwith?course=introduction-to-reactive-programming)
 
-  :video\_camera: :dollar: - André Staltz
+  📹💵 - André Staltz
 
 * [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth)
 
-  :video\_camera: :dollar: - André Staltz
+  📹 💵  - André Staltz
 
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/startWith.ts)
 
