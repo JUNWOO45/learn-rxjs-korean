@@ -2,13 +2,13 @@
 
 #### signature: `scan(accumulator: function, seed: any): Observable`
 
-## Reduce over time.
+## Reduce해나갑니다.
 
-:bulb: You can create [Redux](http://redux.js.org)-like state management with scan!
+:bulb: scan을 활용하여 [Redux](http://redux.js.org)스러운 상태관리를 할 수 있습니다! 
 
-### Examples
+### 예시
 
-**Example 1: Sum over time**
+**예시 1: 더해나갑니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-ltcl9d?file=index.ts&devtoolsheight=100) \)
 
@@ -18,14 +18,14 @@ import { of } from 'rxjs';
 import { scan } from 'rxjs/operators';
 
 const source = of(1, 2, 3);
-// basic scan example, sum over time starting with zero
+// 간단한 scan 예시로, 0부터 시작해서 더해나갑니다.
 const example = source.pipe(scan((acc, curr) => acc + curr, 0));
-// log accumulated values
+// 누적된 값을 기록합니다.
 // output: 1,3,6
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-**Example 2: Accumulating an object**
+**예시 2: 객체에서 사용하기**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-vu63kz?file=index.ts&devtoolsheight=100) \| [jsBin](http://jsbin.com/fusunoguqu/1/edit?js,console) \| [jsFiddle](https://jsfiddle.net/btroncone/36rbu38b/) \)
 
@@ -35,15 +35,15 @@ import { Subject } from 'rxjs';
 import { scan } from 'rxjs/operators';
 
 const subject = new Subject();
-//scan example building an object over time
+// 객체를 만들어나가는 scan 예시
 const example = subject.pipe(
   scan((acc, curr) => Object.assign({}, acc, curr), {})
 );
-//log accumulated values
+//누적된 값을 기록합니다.
 const subscribe = example.subscribe(val =>
   console.log('Accumulated object:', val)
 );
-//next values into subject, adding properties to object
+// subject로 다음 값을 넘겨주고, 객체의 프로퍼티로 추가합니다
 // {name: 'Joe'}
 subject.next({ name: 'Joe' });
 // {name: 'Joe', age: 30}
@@ -52,7 +52,7 @@ subject.next({ age: 30 });
 subject.next({ favoriteLanguage: 'JavaScript' });
 ```
 
-**Example 3: Emitting random values from the accumulated array.**
+**예시 3: 누적된 배열에서 무작위 값을 내보냅니다.**
 
 \( [StackBlitz](https://stackblitz.com/edit/typescript-lb8aw9?file=index.ts&devtoolsheight=100) \)
 
@@ -61,7 +61,7 @@ subject.next({ favoriteLanguage: 'JavaScript' });
 import { interval } from 'rxjs';
 import { scan, map, distinctUntilChanged } from 'rxjs/operators';
 
-// Accumulate values in an array, emit random values from this array.
+// 배열에 값을 누적시키고, 무작위 값을 꺼냅니다.
 const scanObs = interval(1000)
   .pipe(
     scan((a, c) => [...a, c], []),
@@ -71,7 +71,7 @@ const scanObs = interval(1000)
   .subscribe(console.log);
 ```
 
-**Example 4: Accumulating http responses over time**
+**예시 4: http 응답을 누적시킵니다**
 
 \( [StackBlitz](https://stackblitz.com/edit/rxjs-scan-accumulate-request-responses?file=index.ts&devtoolsheight=100) \)
 
@@ -82,7 +82,7 @@ import { scan, delay, repeat, mergeMap } from 'rxjs/operators';
 
 const fakeRequest = of('response').pipe(delay(2000));
 
-// output:
+// 결과:
 // ['response'],
 // ['response','response'],
 // ['response','response','response'],
@@ -96,7 +96,7 @@ interval(1000)
   .subscribe(console.log);
 ```
 
-### Related Recipes
+### 관련된 사용법
 
 * [Alphabet Invasion Game](../../recipes/alphabet-invasion-game.md)
 * [Battleship Game](../../recipes/battleship-game.md)
@@ -116,11 +116,11 @@ interval(1000)
 * [Tetris Game](../../recipes/tetris-game.md)
 * [Uncover Image Game](../../recipes/uncover-image-game.md)
 
-### Additional Resources
+### 추가 자료
 
 * [scan](https://rxjs.dev/api/operators/scan)
 
-  :newspaper: - Official docs
+  :newspaper: - 공식 문서
 
 * [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
 
