@@ -105,9 +105,7 @@ const subscribe = merge(
 
 ### 추가 자료
 
-* [partition](https://rxjs.dev/api/operators/partition)
+* [partition](https://rxjs.dev/api/operators/partition) 📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/observable/partition.ts)
 

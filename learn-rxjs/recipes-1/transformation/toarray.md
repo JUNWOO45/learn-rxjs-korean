@@ -32,9 +32,7 @@ interval(100)
 
 ### 추가 자료
 
-* [toArray](https://rxjs.dev/api/operators/toArray)
+* [toArray](https://rxjs.dev/api/operators/toArray) 📰 - 공식 문서
 
-  :newspaper: - 공식 문서
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/toArray.ts)
 

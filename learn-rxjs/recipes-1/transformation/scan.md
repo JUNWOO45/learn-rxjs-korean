@@ -4,7 +4,7 @@
 
 ## Reduce해나갑니다.
 
-:bulb: scan을 활용하여 [Redux](http://redux.js.org)스러운 상태관리를 할 수 있습니다! 
+💡 scan을 활용하여 [Redux](http://redux.js.org)스러운 상태관리를 할 수 있습니다!
 
 ### 예시
 
@@ -118,25 +118,11 @@ interval(1000)
 
 ### 추가 자료
 
-* [scan](https://rxjs.dev/api/operators/scan)
+* [scan](https://rxjs.dev/api/operators/scan) 📰 - 공식 문서
+* [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs) 📹 - Ben Lesh
+* [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs) 📹 💵 - John Linquist
+* [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth) 📹 💵 - André Staltz
+* [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app) 📹 - Kwinten Pisman
 
-  :newspaper: - 공식 문서
-
-* [Aggregating streams with reduce and scan using RxJS](https://egghead.io/lessons/rxjs-aggregating-streams-with-reduce-and-scan-using-rxjs)
-
-  :video\_camera: - Ben Lesh
-
-* [Updating data with scan](https://egghead.io/lessons/rxjs-updating-data-with-scan?course=step-by-step-async-javascript-with-rxjs)
-
-  :video\_camera: :dollar: - John Linquist
-
-* [Transformation operator: scan](https://egghead.io/lessons/rxjs-transformation-operator-scan?course=rxjs-beyond-the-basics-operators-in-depth)
-
-  :video\_camera: :dollar: - André Staltz
-
-* [Build your own scan operator](https://blog.strongbrew.io/build-the-operators-from-rxjs-from-scratch/?lectureId=scan#app)
-
-  :video\_camera: - Kwinten Pisman
-
-> :file\_folder: Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)
+> 📂 Source Code: [https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts](https://github.com/ReactiveX/rxjs/blob/master/src/internal/operators/scan.ts)
 
